@@ -8,7 +8,7 @@ public class CatMovement : MonoBehaviour
     int CurrentPosition = 2;
     private Vector3 targetPosition;
     public float moveSpeed = 10.0f;
-    private 
+    //private string state = "Running";
     void Start()
     {
         targetPosition = transform.position;
@@ -37,6 +37,10 @@ public class CatMovement : MonoBehaviour
                 MoveCatDown();
             }
         }
+        if (Input.GetKey("space"))
+        {
+            CatJump();
+        }
     }
     void MoveCatUp()
     {
@@ -50,6 +54,7 @@ public class CatMovement : MonoBehaviour
     }
     void CatJump()
     {
-        
+        //state = "Jumping";
+        //transform.scale += new Vector3(4, 4, 0);
     }
 }
