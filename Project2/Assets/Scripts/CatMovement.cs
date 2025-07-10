@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class CatMovement : MonoBehaviour
@@ -8,7 +9,7 @@ public class CatMovement : MonoBehaviour
     int CurrentPosition = 2;
     private Vector3 targetPosition;
     public float moveSpeed = 10.0f;
-    //private string state = "Running";
+    private string state = "Running";
     void Start()
     {
         targetPosition = transform.position;
@@ -39,7 +40,17 @@ public class CatMovement : MonoBehaviour
         }
         if (Input.GetKey("space"))
         {
-            CatJump();
+            if (state == "Running")
+            {
+                CatJump();
+            }
+        }
+        if (Input.GetKey("a"))
+        {
+            if (state == "Running")
+            {
+                CatCrawl();
+            }
         }
     }
     void MoveCatUp()
@@ -52,9 +63,20 @@ public class CatMovement : MonoBehaviour
         targetPosition += new Vector3(0, -3, 0);
         CurrentPosition -= 1;
     }
-    void CatJump()
+    async Task CatJump()
     {
-        //state = "Jumping";
-        //transform.scale += new Vector3(4, 4, 0);
+        state = "Jumping";
+        transform.localScale = new Vector3(12, 12, 0);
+        await Task.Delay(1500);
+        transform.localScale = new Vector3(8, 8, 0);
+        state = "Running";
+    }
+    async Task CatCrawl()
+    {
+        state = "Crawling";
+        transform.localScale = new Vector3(4, 4, 0);
+        await Task.Delay(1500);
+        transform.localScale = new Vector3(8, 8, 0);
+        state = "Running";
     }
 }
