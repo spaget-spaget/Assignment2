@@ -3,67 +3,63 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
-
-public class CatMovement : MonoBehaviour
+namespace Assets.Scripts
 {
-   
-    int CurrentPosition = 2; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
-    private Vector3 targetPosition; // declares targetPosition variable
-    public float laneChangingSpeed = 10.0f; // Adjust this value to control the speed in which the cat changes lanes
-    public float sizeChangingTime = 0.2f; // Adjust this value to control the speed in which the cat changes size
-    private int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
-    private Vector3 runningScale = new Vector3(8, 8, 0); // this is the scale of the cat when it is running
-    private Vector3 jumpingScale = new Vector3(12, 12, 0); // this is the scale of the cat when it is jumping
-    private Vector3 crawlingScale = new Vector3(4, 4, 0); // this is the scale of the cat when it is crawling
-    private bool inScaling = false; // this is a boolean that is used to check if the cat is currently being scaled to a new size
-    public float movementSpeed = 0.1f;
-
-
-    void Start()
+    public class CatMovement : MonoBehaviour
     {
-        targetPosition.x = transform.position.x;
-        targetPosition.z = transform.position.z;
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, laneChangingSpeed * Time.deltaTime); // Checks if it needs to move the cat up or down lanes
-        // If the cat is not at the target yet, don't allow new input
-        if (transform.position != targetPosition)
-            return;
-        
-        if (CurrentPosition < 3) // checks if the cat is at the top row (which is row 3). if cat is in row 3, it wont be able to move up
+        int CurrentPosition = 2; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
+        private int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
+        private Vector3 targetYvalue; // ending y value
+        private Vector3 targetXvalue; // ending x value
+        private Vector3 runningScale = new Vector3(8, 8, 0); // this is the scale of the cat when it is running
+        private Vector3 jumpingScale = new Vector3(12, 12, 0); // this is the scale of the cat when it is jumping
+        private Vector3 crawlingScale = new Vector3(4, 4, 0); // this is the scale of the cat when it is crawling
+        private bool inScaling = false; // this is a boolean that is used to check if the cat is currently being scaled to a new size
+        private bool changingLanes = false; // this is a boolean that is used to check if the cat is currently changing lanes
+        private float laneChangingSpeed = 0.2f; // Adjust this value to control the speed in which the cat changes lanes
+        private float sizeChangingTime = 0.2f; // Adjust this value to control the speed in which the cat changes size
+        private float movementSpeed = 1f;
+
+        void Start()
         {
-            if (Input.GetKey("w")) // checks if the player has pressed the w key
-            {
-                MoveCatUp(); // moves the cat up one row
-            }
+            targetXvalue = new Vector3(100f, transform.position.y, transform.position.z);
         }
-        if (CurrentPosition > 0) // checks if the cat is at the bottom row (which is row 0). if cat is in row 0, it wont be able to move down
+
+        // Update is called once per frame
+        void Update()
         {
-            if (Input.GetKey("s")) // checks if the player has pressed the s key
+            transform.position = Vector3.MoveTowards(transform.position, targetXvalue, movementSpeed * Time.deltaTime);
+
+            if ((CurrentPosition < 3) && (changingLanes == false)) // checks if the cat is at the top row (which is row 3). if cat is in row 3, it wont be able to move up
             {
-                MoveCatDown(); // moves the cat down one row
+                if (Input.GetKey("w")) // checks if the player has pressed the w key
+                {
+                    callMoveUp(); // moves the cat up one row
+                }
             }
-        }
-        if (Input.GetKey("space")) // checks if the player has pressed the space key
-        {
-            if (inScaling == false)
+            if ((CurrentPosition > 0) && (changingLanes == false)) // checks if the cat is at the bottom row (which is row 0). if cat is in row 0, it wont be able to move down
             {
-                inScaling = true;
+
+                if (Input.GetKey("s")) // checks if the player has pressed the s key
+                {
+                    callMoveDown(); // moves the cat down one row
+                }
+            }
+
+
+            if ((Input.GetKey("space")) && (inScaling == false)) // checks if the player has pressed the space key
+            {
+
                 if (state == 1) // checks if the cat is in the running state, which is 1
                 {
                     callCatJump(); // calls the CatJump function
                 }
             }
-        }
-        if (Input.GetKey("a")) // checks if the player has pressed the a key
-        {
-            if (inScaling == false)
+            if ((Input.GetKey("a")) && (inScaling == false))// checks if the player has pressed the a key
             {
-                inScaling = true;
+
+
                 if (state == 1) // checks if the cat is in the running state, which is 1
                 {
                     callCatCrawl(); // calls the CatCrawl function
@@ -74,74 +70,116 @@ public class CatMovement : MonoBehaviour
                 }
             }
         }
-    }
 
-    void MoveCatUp() // moves the cat up one row. the space between rows is about 3 units in y value
-    {
-        targetPosition += new Vector3(0, 3, 0); // adds 3 units to the y value
-        CurrentPosition += 1; // adds 1 to the CurrentPosition, which is essentially the row that the cat is on
-    }
-    void MoveCatDown() // moves the cat down one row by subtracting 3 units from the y value
-    {
-        targetPosition += new Vector3(0, -3, 0); // subtracts 3 units from the y value
-        CurrentPosition -= 1; // subtracts 1 from the CurrentPosition
-    }
-    private async void callCatJump() // calls the CatJump function
-    {
-        await CatJump(); 
-    }
-    private async void callCatCrawl() // calls the CatCrawl function
-    {
-        await CatCrawl();
-    }
-    private async void callStopCrawling() // calls the StopCrawling function
-    {
-        await StopCrawling();
-    }
- 
-    async Task CatCrawl() //CatCrawl function
-    {
-        await ScaleTo(crawlingScale); // scales the cat to the crawling scale
-        state = 3; // sets the state to 3, which is the crawling state
-    }
-    async Task StopCrawling()
-    {
-        
-        await ScaleTo(runningScale); // scales the cat to the running scale
-        state = 1; // sets the state to 1, which is the running state
-    }
 
-    async Task CatJump()
-    {
-        state = 2;
-
-        // Smoothly scale to jumpingScale
-        await ScaleTo(jumpingScale); // Adjust duration as needed
-
-        // Wait in the air
-        await Task.Delay(1500);
-
-        // Smoothly scale back to runningScale
-        await ScaleTo(runningScale);
-
-        state = 1;
-    }
-
-    // Scales the cat to the target scale
-    async Task ScaleTo(Vector3 targetScale)
-    {
-        float elapsed = 0f; // keeps track of time
-        Vector3 initialScale = transform.localScale; // stores the initial scale
-
-        while (elapsed < sizeChangingTime) // while the elapsed time is less than the sizeChangingTime
+        private async void callMoveUp() // calls the CatJump function
         {
-            if (this == null || gameObject == null) return; // if the cat is destroyed, stop scaling (Mostly here to prevent errors)
-            transform.localScale = Vector3.Lerp(initialScale, targetScale, elapsed / sizeChangingTime);
-            elapsed += Time.deltaTime; // adds time
-            await Task.Yield(); // Wait until next frame
+            await MoveUp();
+
+        }
+        private async void callMoveDown() // calls the CatJump function
+        {
+            await MoveDown();
+
+        }
+        private async void callCatJump() // calls the CatJump function
+        {
+            await CatJump();
+        }
+        private async void callCatCrawl() // calls the CatCrawl function
+        {
+            await CatCrawl();
+        }
+        private async void callStopCrawling() // calls the StopCrawling function
+        {
+            await StopCrawling();
         }
 
-        transform.localScale = targetScale; // ensure final scale is exactly set
-        inScaling = false; // set inScaling to false so that cat can be scaled again
+
+
+        async Task MoveUp()
+        {
+            changingLanes = true;
+            targetYvalue = new Vector3(transform.position.x + (movementSpeed * laneChangingSpeed), transform.position.y + 3, transform.position.z);
+
+            await MoveTo(targetYvalue);
+            CurrentPosition += 1;
+            changingLanes = false; // set changingLanes to false so that cat can change lanes again
+        }
+        async Task MoveDown()
+        {
+            changingLanes = true;
+            targetYvalue = new Vector3(transform.position.x + (movementSpeed * laneChangingSpeed), transform.position.y - 3, transform.position.z);
+            await MoveTo(targetYvalue);
+            CurrentPosition -= 1;
+            changingLanes = false; // set changingLanes to false so that cat can change lanes again
+
+        }
+        async Task CatCrawl() //CatCrawl function
+        {
+            inScaling = true;
+            await ScaleTo(crawlingScale); // scales the cat to the crawling scale
+            state = 3; // sets the state to 3, which is the crawling state
+            inScaling = false; // set inScaling to false so that cat can be scaled again
+        }
+        async Task StopCrawling()
+        {
+            inScaling = true;
+            await ScaleTo(runningScale); // scales the cat to the running scale
+            state = 1; // sets the state to 1, which is the running state
+            inScaling = false; // set inScaling to false so that cat can be scaled again
+        }
+
+        async Task CatJump()
+        {
+            inScaling = true;
+            state = 2;
+
+            // Smoothly scale to jumpingScale
+            await ScaleTo(jumpingScale);
+
+            // Wait in the air
+            await Task.Delay(700);
+
+            // Smoothly scale back to runningScale
+            await ScaleTo(runningScale);
+
+            state = 1;
+            inScaling = false; // set inScaling to false so that cat can be scaled again
+        }
+
+        // Scales the cat to the target scale
+        async Task ScaleTo(Vector3 targetScale)
+        {
+            float elapsed = 0f; // keeps track of time
+            Vector3 initialScale = transform.localScale; // stores the initial scale
+
+            while (elapsed < sizeChangingTime) // while the elapsed time is less than the sizeChangingTime
+            {
+                if (this == null || gameObject == null) return; // if the cat is destroyed, stop scaling (Mostly here to prevent errors)
+                transform.localScale = Vector3.Lerp(initialScale, targetScale, elapsed / sizeChangingTime);
+                elapsed += Time.deltaTime; // adds time
+                await Task.Yield(); // Wait until next frame
+            }
+
+            transform.localScale = targetScale; // ensure final scale is exactly set
+
+        }
+        async Task MoveTo(Vector3 targetPosition)
+        {
+            float elapsed = 0f; // keeps track of time
+            Vector3 initialPosition = transform.position; // stores the initial position
+
+            while (elapsed < laneChangingSpeed) // while the elapsed time is less than the laneChangingTime
+            {
+                if (this == null || gameObject == null) return; // if the cat is destroyed, stop changing lanes (Mostly here to prevent errors)
+                transform.position = Vector3.Lerp(initialPosition, targetPosition, elapsed / laneChangingSpeed);
+                elapsed += Time.deltaTime; // adds time
+                await Task.Yield(); // Wait until next frame
+            }
+
+            transform.position = targetPosition; // ensure final scale is exactly set
+
+        }
     }
 }

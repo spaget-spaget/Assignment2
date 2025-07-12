@@ -8,6 +8,10 @@ TagManager:
   - lane2
   - lane3
   - lane4
+  - Crouchables
+  - Jumpable
+  - Collectable
+  - Blockades
   layers:
   - Default
   - TransparentFX

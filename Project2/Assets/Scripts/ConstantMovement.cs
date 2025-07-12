@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ConstantMovement : MonoBehaviour
+namespace Assets.Scripts
 {
-    //public float movementSpeed = 0.01f;
-    //private Vector3 targetPosition;
-    // Start is called before the first frame update
-    void Start()
+    public class ConstantMovement : MonoBehaviour
     {
-        //targetPosition.y = transform.position.y;
-        //targetPosition.z = transform.position.z;
-    }
+        private Vector3 targetXvalue; // ending x value
+        private float movementSpeed = 1f;
+        private Vector3 targetPosition = new Vector3(100, 0, 0);
+        // Start is called before the first frame update
+        void Start()
+        {
+            targetXvalue = new Vector3(100f, transform.position.y, transform.position.z);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //targetPosition = transform.position + movementSpeed;
-        //transform.position = Vector3.MoveTowards(transform.position, targetPosition, movementSpeed);
-        
+        // Update is called once per frame
+        void Update()
+        {
+
+            transform.position = Vector3.MoveTowards(transform.position, targetXvalue, movementSpeed * Time.deltaTime);
+
+        }
     }
 }
