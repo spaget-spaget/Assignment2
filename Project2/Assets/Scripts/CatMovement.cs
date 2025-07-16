@@ -9,7 +9,7 @@ namespace Assets.Scripts
     {
 
         int CurrentPosition = 2; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
-        private int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
+        public int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
         private Vector3 targetYvalue; // ending y value
         private Vector3 targetXvalue; // ending x value
         private Vector3 runningScale = new Vector3(8, 8, 0); // this is the scale of the cat when it is running
