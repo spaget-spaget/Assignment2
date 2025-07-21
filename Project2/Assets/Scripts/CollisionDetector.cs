@@ -17,7 +17,7 @@ namespace Assets.Scripts
 
         public void OnTriggerStay2D(Collider2D other) // checks if the cat has collided with a blockade
         {
-            if ((other.gameObject.CompareTag("Blockades")) && (catMovement.state != 2))
+            if (other.gameObject.CompareTag("Blockades"))
             {
                 Destroy(gameObject);
                 return;
@@ -28,7 +28,13 @@ namespace Assets.Scripts
                 Destroy(gameObject);
                 return;
             }
-            
+
+            else if ((other.gameObject.CompareTag("Jumpable")) && (catMovement.state != 2))
+            {
+                Destroy(gameObject);
+                return;
+            }
+
         }
     }
 }

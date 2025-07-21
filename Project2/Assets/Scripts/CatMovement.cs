@@ -7,7 +7,7 @@ namespace Assets.Scripts
 {
     public class CatMovement : MonoBehaviour
     {
-
+        //Movement Variables
         int CurrentPosition = 2; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
         public int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
         private Vector3 targetYvalue; // ending y value
@@ -19,11 +19,20 @@ namespace Assets.Scripts
         private bool changingLanes = false; // this is a boolean that is used to check if the cat is currently changing lanes
         private float laneChangingSpeed = 0.2f; // Adjust this value to control the speed in which the cat changes lanes
         private float sizeChangingTime = 0.2f; // Adjust this value to control the speed in which the cat changes size
-        private float movementSpeed = 1f;
+        public float movementSpeed = 1f;
+        public float speedIncreaseRate = 1f;
+
+        //Timer variables
+        public float elapsedTime = 0f;
+        private bool isRunning = false;
+        private bool waitASec = false;
+        private float waitTime = 0f;
+
 
         void Start()
         {
             targetXvalue = new Vector3(100f, transform.position.y, transform.position.z);
+            StartStopwatch();
         }
 
         // Update is called once per frame
@@ -68,6 +77,26 @@ namespace Assets.Scripts
                 {
                     callStopCrawling(); // calls the StopCrawling function
                 }
+            }
+
+
+            /*Clock code*/
+            if (isRunning)
+            {
+                elapsedTime += Time.deltaTime;
+
+                int minutes = Mathf.FloorToInt(elapsedTime / 60);
+                int seconds = Mathf.FloorToInt(elapsedTime % 60);
+            }
+            if ((Mathf.FloorToInt(elapsedTime % 10) == 0) && (elapsedTime > 0) && (waitASec == false))
+            {
+                movementSpeed += speedIncreaseRate;
+                waitASec = true;
+                waitTime = elapsedTime + 1f;
+            }
+            if ((waitASec == true) && (elapsedTime >= waitTime))
+            {
+                waitASec = false;
             }
         }
 
@@ -180,6 +209,21 @@ namespace Assets.Scripts
 
             transform.position = targetPosition; // ensure final scale is exactly set
 
+        }
+        /*Clock Code Begins Here*/
+        public void StopStopwatch()
+        {
+            isRunning = false;
+        }
+
+        public void StartStopwatch()
+        {
+            isRunning = true;
+        }
+
+        public void ResetStopwatch()
+        {
+            elapsedTime = 0f;
         }
     }
 }
