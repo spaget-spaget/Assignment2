@@ -11,7 +11,7 @@ namespace Assets.Scripts
         int CurrentPosition = 2; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
         public int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
         private Vector3 targetYvalue; // ending y value
-        private Vector3 targetXvalue; // ending x value
+        private InternalTimer targetXvalue; // ending x value
         private Vector3 runningScale = new Vector3(8, 8, 0); // this is the scale of the cat when it is running
         private Vector3 jumpingScale = new Vector3(12, 12, 0); // this is the scale of the cat when it is jumping
         private Vector3 crawlingScale = new Vector3(4, 4, 0); // this is the scale of the cat when it is crawling
@@ -19,26 +19,22 @@ namespace Assets.Scripts
         private bool changingLanes = false; // this is a boolean that is used to check if the cat is currently changing lanes
         private float laneChangingSpeed = 0.2f; // Adjust this value to control the speed in which the cat changes lanes
         private float sizeChangingTime = 0.2f; // Adjust this value to control the speed in which the cat changes size
-        public float movementSpeed = 1f;
-        public float speedIncreaseRate = 1f;
+        private InternalTimer movementSpeed;
 
-        //Timer variables
-        public float elapsedTime = 0f;
-        private bool isRunning = false;
-        private bool waitASec = false;
-        private float waitTime = 0f;
+ 
 
 
         void Start()
         {
-            targetXvalue = new Vector3(100f, transform.position.y, transform.position.z);
-            StartStopwatch();
+            targetXvalue = GetComponent<InternalTimer>();
+            movementSpeed = GetComponent<InternalTimer>();
+
         }
 
         // Update is called once per frame
         void Update()
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetXvalue, movementSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, targetXvalue.targetXvalue, movementSpeed.movementSpeed * Time.deltaTime);
 
             if ((CurrentPosition < 3) && (changingLanes == false)) // checks if the cat is at the top row (which is row 3). if cat is in row 3, it wont be able to move up
             {
@@ -80,24 +76,8 @@ namespace Assets.Scripts
             }
 
 
-            /*Clock code*/
-            if (isRunning)
-            {
-                elapsedTime += Time.deltaTime;
+           
 
-                int minutes = Mathf.FloorToInt(elapsedTime / 60);
-                int seconds = Mathf.FloorToInt(elapsedTime % 60);
-            }
-            if ((Mathf.FloorToInt(elapsedTime % 10) == 0) && (elapsedTime > 0) && (waitASec == false))
-            {
-                movementSpeed += speedIncreaseRate;
-                waitASec = true;
-                waitTime = elapsedTime + 1f;
-            }
-            if ((waitASec == true) && (elapsedTime >= waitTime))
-            {
-                waitASec = false;
-            }
         }
 
 
@@ -129,7 +109,7 @@ namespace Assets.Scripts
         async Task MoveUp()
         {
             changingLanes = true;
-            targetYvalue = new Vector3(transform.position.x + (movementSpeed * laneChangingSpeed), transform.position.y + 3, transform.position.z);
+            targetYvalue = new Vector3(transform.position.x + (movementSpeed.movementSpeed * laneChangingSpeed), transform.position.y + 3, transform.position.z);
 
             await MoveTo(targetYvalue);
             CurrentPosition += 1;
@@ -138,7 +118,7 @@ namespace Assets.Scripts
         async Task MoveDown()
         {
             changingLanes = true;
-            targetYvalue = new Vector3(transform.position.x + (movementSpeed * laneChangingSpeed), transform.position.y - 3, transform.position.z);
+            targetYvalue = new Vector3(transform.position.x + (movementSpeed.movementSpeed * laneChangingSpeed), transform.position.y - 3, transform.position.z);
             await MoveTo(targetYvalue);
             CurrentPosition -= 1;
             changingLanes = false; // set changingLanes to false so that cat can change lanes again
@@ -209,21 +189,6 @@ namespace Assets.Scripts
 
             transform.position = targetPosition; // ensure final scale is exactly set
 
-        }
-        /*Clock Code Begins Here*/
-        public void StopStopwatch()
-        {
-            isRunning = false;
-        }
-
-        public void StartStopwatch()
-        {
-            isRunning = true;
-        }
-
-        public void ResetStopwatch()
-        {
-            elapsedTime = 0f;
         }
     }
 }
