@@ -12,6 +12,8 @@ TagManager:
   - Jumpable
   - Collectable
   - Blockades
+  - LaneLoader
+  - LaneDelete
   layers:
   - Default
   - TransparentFX

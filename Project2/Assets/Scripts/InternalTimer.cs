@@ -6,6 +6,7 @@ namespace Assets.Scripts
 {
     public class InternalTimer : MonoBehaviour
     {
+        public float xPosition = 0f;
         public float movementSpeed = 1f;
         private float elapsedTime = 0f;
         private bool isRunning = false;
@@ -16,7 +17,7 @@ namespace Assets.Scripts
         // Start is called before the first frame update
         void Start()
         {
-            targetXvalue = new Vector3(100f, transform.position.y, transform.position.z);
+            targetXvalue = new Vector3(xPosition, transform.position.y, transform.position.z);
             StartStopwatch();
         }
 
