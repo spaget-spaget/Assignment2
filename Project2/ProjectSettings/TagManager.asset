@@ -10,10 +10,11 @@ TagManager:
   - lane4
   - Crouchables
   - Jumpable
-  - Collectable
   - Blockades
   - LaneLoader
   - LaneDelete
+  - ObjectDelete
+  - CatFood
   layers:
   - Default
   - TransparentFX

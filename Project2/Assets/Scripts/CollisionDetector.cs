@@ -17,24 +17,18 @@ namespace Assets.Scripts
 
         public void OnTriggerStay2D(Collider2D other) // checks if the cat has collided with a blockade
         {
-            if (other.gameObject.CompareTag("Blockades"))
+            if ((other.gameObject.CompareTag("Blockades")) || 
+            ((other.gameObject.CompareTag("Crouchables")) && (catMovement.state != 3)) || 
+            ((other.gameObject.CompareTag("Jumpable")) && (catMovement.state != 2)))
             {
                 Destroy(gameObject);
                 return;
             }
 
-            else if ((other.gameObject.CompareTag("Crouchables")) && (catMovement.state != 3))
+            if (other.gameObject.CompareTag("CatFood"))
             {
-                Destroy(gameObject);
-                return;
+                Destroy(other.gameObject);
             }
-
-            else if ((other.gameObject.CompareTag("Jumpable")) && (catMovement.state != 2))
-            {
-                Destroy(gameObject);
-                return;
-            }
-
         }
     }
 }

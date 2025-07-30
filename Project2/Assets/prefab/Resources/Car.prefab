@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 1755287388640009137}
   - component: {fileID: 5272302443566578455}
   - component: {fileID: -1754814021948287048}
+  - component: {fileID: -3653381326460508208}
   m_Layer: 0
   m_Name: Car
   m_TagString: Crouchables
@@ -199,6 +200,18 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5990755647855730922}
   m_Enabled: 1
-  m_Force: {x: -1, y: 0}
-  m_RelativeForce: {x: 0, y: 0}
+  m_Force: {x: 0, y: 0}
+  m_RelativeForce: {x: -10, y: 0}
   m_Torque: 0
+--- !u!114 &-3653381326460508208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5990755647855730922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0aac257f4e37846ab8423e6bb49f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
