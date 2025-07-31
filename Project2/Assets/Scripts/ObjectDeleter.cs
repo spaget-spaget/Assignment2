@@ -11,12 +11,9 @@ public class ObjectDeleter : MonoBehaviour
         MyRb = GetComponent<BoxCollider2D>();
     }
     // Update is called once per frame
-    public void OnTriggerStay2D(Collider2D other) // checks if the cat has collided with a blockade
+    public void OnTriggerStay2D(Collider2D other) 
     {
-        if (other.gameObject.CompareTag("ObjectDelete"))
-        {
-            Destroy(gameObject);
+            Destroy(other.gameObject);
             return;
-        }
     }
-    }
+}

@@ -8,10 +8,9 @@ namespace Assets.Scripts
     public class CatMovement : MonoBehaviour
     {
         //Movement Variables
-        int CurrentPosition = 2; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
+        private int CurrentPosition = 0; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
         public int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
         private Vector3 targetYvalue; // ending y value
-        private InternalTimer targetXvalue; // ending x value
         private Vector3 runningScale = new Vector3(1, 1, -3); // this is the scale of the cat when it is running
         private Vector3 jumpingScale = new Vector3(1.4f, 1.4f, -3); // this is the scale of the cat when it is jumping
         private Vector3 crawlingScale = new Vector3(0.6f, 0.6f, -3); // this is the scale of the cat when it is crawling
@@ -19,31 +18,35 @@ namespace Assets.Scripts
         private bool changingLanes = false; // this is a boolean that is used to check if the cat is currently changing lanes
         private float laneChangingSpeed = 0.2f; // Adjust this value to control the speed in which the cat changes lanes
         private float sizeChangingTime = 0.2f; // Adjust this value to control the speed in which the cat changes size
-        private InternalTimer movementSpeed;
-
- 
-
-
+        public float yPosition = 0f;
+        private InternalTimer internalTimer; // Reference to the script
         void Start()
         {
-            targetXvalue = GetComponent<InternalTimer>();
-            movementSpeed = GetComponent<InternalTimer>();
-
+            // Find the GameObject that has InternalTimer
+            GameObject timerObject = GameObject.Find("GlobalTimer"); // change to actual name
+            if (timerObject != null)
+            {
+                internalTimer = timerObject.GetComponent<InternalTimer>();
+            }
+            else
+            {
+                Debug.LogWarning("Timer object not found!");
+            }
         }
 
         // Update is called once per frame
         void Update()
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetXvalue.targetXvalue, movementSpeed.movementSpeed * Time.deltaTime);
-
-            if ((CurrentPosition < 3) && (changingLanes == false)) // checks if the cat is at the top row (which is row 3). if cat is in row 3, it wont be able to move up
+            transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, internalTimer.movementSpeed * Time.deltaTime);
+            yPosition = (1 + (CurrentPosition * 3));
+            if ((CurrentPosition < 1) && (changingLanes == false)) // checks if the cat is at the top row (which is row 3). if cat is in row 3, it wont be able to move up
             {
                 if (Input.GetKey("w")) // checks if the player has pressed the w key
                 {
                     callMoveUp(); // moves the cat up one row
                 }
             }
-            if ((CurrentPosition > 0) && (changingLanes == false)) // checks if the cat is at the bottom row (which is row 0). if cat is in row 0, it wont be able to move down
+            if ((CurrentPosition > -2) && (changingLanes == false)) // checks if the cat is at the bottom row (which is row 0). if cat is in row 0, it wont be able to move down
             {
 
                 if (Input.GetKey("s")) // checks if the player has pressed the s key
@@ -106,18 +109,22 @@ namespace Assets.Scripts
         async Task MoveUp()
         {
             changingLanes = true;
-            targetYvalue = new Vector3(transform.position.x + (movementSpeed.movementSpeed * laneChangingSpeed), transform.position.y + 3, transform.position.z);
+            CurrentPosition += 1;
+            yPosition = (1.46f + (CurrentPosition * 3));
+            targetYvalue = new Vector3(transform.position.x + (internalTimer.movementSpeed * laneChangingSpeed), yPosition, transform.position.z);
 
             await MoveTo(targetYvalue);
-            CurrentPosition += 1;
+            
             changingLanes = false; // set changingLanes to false so that cat can change lanes again
         }
         async Task MoveDown()
         {
             changingLanes = true;
-            targetYvalue = new Vector3(transform.position.x + (movementSpeed.movementSpeed * laneChangingSpeed), transform.position.y - 3, transform.position.z);
-            await MoveTo(targetYvalue);
             CurrentPosition -= 1;
+            yPosition = (1.46f + (CurrentPosition * 3));
+            targetYvalue = new Vector3(transform.position.x + (internalTimer.movementSpeed * laneChangingSpeed), yPosition, transform.position.z);
+            await MoveTo(targetYvalue);
+            
             changingLanes = false; // set changingLanes to false so that cat can change lanes again
 
         }

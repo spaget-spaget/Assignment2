@@ -23,8 +23,17 @@ namespace Assets.Scripts
         // Start is called before the first frame update
         void Start()
         {
-            catMovement = GetComponent<CatMovement>();
-            targetXvalue = new Vector3(xPosition, transform.position.y, transform.position.z);
+            // Find the GameObject that has InternalTimer
+            GameObject playerObject = GameObject.Find("PlayerCat"); // change to actual name
+            if (playerObject != null)
+            {
+                catMovement = playerObject.GetComponent<CatMovement>();
+            }
+            else
+            {
+                Debug.LogWarning("Player object not found!");
+            }
+            
             StartStopwatch();
         }
 
@@ -34,6 +43,7 @@ namespace Assets.Scripts
             
             if (isRunning)
             {
+                targetXvalue = new Vector3(xPosition, catMovement.yPosition, transform.position.z);
                 elapsedTime += Time.deltaTime;
 
                 int minutes = Mathf.FloorToInt(elapsedTime / 60);
@@ -61,9 +71,17 @@ namespace Assets.Scripts
                 StopStopwatch();
                 return;
             }
+            if (catMovement.state == 3)
+            {
+                CrouchPenalty = 0.1f;
+            }
+            else
+            {
+                CrouchPenalty = 0f;
+            }
 
             //Energy Meter Code Begins Here
-            if (energyMeter <=80)
+            if (energyMeter <= 80)
             {
                 penaltyAmount = 0.95f;
             }
@@ -84,10 +102,7 @@ namespace Assets.Scripts
                 penaltyAmount = 1.00f;
             }
 
-            if (catMovement.state == 3)
-            {
-                CrouchPenalty = 0.1f;
-            }
+            
             movementSpeed = currentSpeed * (penaltyAmount - CrouchPenalty);
 
 

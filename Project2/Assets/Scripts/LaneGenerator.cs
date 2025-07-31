@@ -10,21 +10,19 @@ namespace Assets.Scripts
         public GameObject LanesPrefab;
         public GameObject VehiclePrefab;
         public GameObject ObjectPrefab;
+        public GameObject CatFoodPrefab;
         private Vector3 LanePosition { get; set; }
         private Vector3 ObjectPosition { get; set; }
         private Vector3 ObjectRotation { get; set; }
-        private bool LaneMade = false;
         private bool ObjectNumbers = false;
         private int obstacleCounterLane1 = 0;
         private int obstacleCounterLane2 = 0;
         private int obstacleCounterLane3 = 0;
         private int obstacleCounterLane4 = 0;
         private int baseNumber = 0;
+        private int choice = 0;
+        private bool foodCreated = false;
 
-        public void Start()
-        {
-            
-        }
         public void Update(){
 
         if (LanesPrefab == null)
@@ -32,6 +30,7 @@ namespace Assets.Scripts
                 ObjectPrefab = Resources.Load<GameObject>("prefab/TrashCan");
                 VehiclePrefab = Resources.Load<GameObject>("prefab/Car");
                 LanesPrefab = Resources.Load<GameObject>("prefab/Lanes");
+                CatFoodPrefab = Resources.Load<GameObject>("prefab/CatFood");
             }
             if (ObjectNumbers == false)
             {
@@ -42,23 +41,22 @@ namespace Assets.Scripts
                 ObjectNumbers = true;
             }
         }
-        public void OnTriggerStay2D(Collider2D other)
+        public void OnTriggerEnter2D(Collider2D other)
         {
-            if ((LaneMade == false) && (other.gameObject.CompareTag("Player")))
+            if (other.gameObject.CompareTag("Player"))
             {
-                LanePosition = new Vector3(this.transform.position.x + 28, 0, 0);
+                LanePosition = new Vector3(this.transform.position.x + 28, this.transform.position.y, 0);
                 GameObject newLanes = Instantiate(LanesPrefab, LanePosition, Quaternion.identity);
-                LaneMade = true;
                 for (int i = 0; i < obstacleCounterLane1; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), 4, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y + 4, -1);
                     MakeObstacles();
                     baseNumber += 4;
                 }
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane2; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), 1, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y + 1, -1);
                     ObjectRotation = new Vector3(0, 0, 0);
                     MakeCar();
                     baseNumber += 4;
@@ -66,7 +64,7 @@ namespace Assets.Scripts
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane3; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x - 16 - baseNumber, -2, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x - 16 - (baseNumber * 1.4f), this.transform.position.y -2, -1);
                     ObjectRotation = new Vector3(0, 0, 180);
                     MakeCar();
                     baseNumber += 4;
@@ -74,26 +72,42 @@ namespace Assets.Scripts
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane4; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), -5, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y - 5, -1);
                     MakeObstacles();
                     baseNumber += 4;
                 }
-            }
-            if ((LaneMade == true) && (other.gameObject.CompareTag("ObjectDelete")))
-            {   
-                Destroy(gameObject);
-                LaneMade = false;
             }
         }
 
         public void MakeObstacles()
         {
-            GameObject newObstacle = Instantiate(ObjectPrefab, ObjectPosition, Quaternion.identity);
+            choice = Random.Range(1, 401);
+            if ((choice <= 50) && (foodCreated == false))
+            {
+                GameObject newObstacle = Instantiate(CatFoodPrefab, ObjectPosition, Quaternion.identity);
+                foodCreated = true;
+            }
+            else
+            {
+                GameObject newObstacle = Instantiate(ObjectPrefab, ObjectPosition, Quaternion.identity);
+                
+            }
+            
         }
         public void MakeCar()
         {
-            GameObject newCar = Instantiate(VehiclePrefab, ObjectPosition, Quaternion.identity);
-            newCar.transform.Rotate(ObjectRotation);
+            choice = Random.Range(1, 401);
+            if ((choice <= 50) && (foodCreated == false))
+            {
+                GameObject newObstacle = Instantiate(CatFoodPrefab, ObjectPosition, Quaternion.identity);
+                foodCreated = true;
+            }
+            else
+            {
+                GameObject newCar = Instantiate(VehiclePrefab, ObjectPosition, Quaternion.identity);
+                newCar.transform.Rotate(ObjectRotation);
+            }
+            
         }
     }
 }

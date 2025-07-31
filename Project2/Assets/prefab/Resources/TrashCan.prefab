@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9167399255471904388}
   - component: {fileID: 335509082567932252}
-  - component: {fileID: 8889967294753516635}
   m_Layer: 0
   m_Name: TrashCan
   m_TagString: Jumpable
@@ -79,18 +78,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 2}
   m_EdgeRadius: 0
---- !u!114 &8889967294753516635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4003722687620280440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f0aac257f4e37846ab8423e6bb49f57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9157770227926631594
 GameObject:
   m_ObjectHideFlags: 0

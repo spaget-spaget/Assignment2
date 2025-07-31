@@ -607,6 +607,7 @@ MonoBehaviour:
   LanesPrefab: {fileID: 5058080788097713202}
   VehiclePrefab: {fileID: 5990755647855730922, guid: 6975801e88144f24a9ff52e20cc92769, type: 3}
   ObjectPrefab: {fileID: 4003722687620280440, guid: 1fa09315736e88b45a9ae18b2e19fbaf, type: 3}
+  CatFoodPrefab: {fileID: 4184787837632382400, guid: 9143a16726796f745b3697e78ca4dff6, type: 3}
 --- !u!1 &6425192053876019518
 GameObject:
   m_ObjectHideFlags: 0

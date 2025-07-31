@@ -8,9 +8,19 @@ namespace Assets.Scripts
     {
         private BoxCollider2D MyRb { get; set; }
         private CatMovement catMovement;
+        private InternalTimer internalTimer;
         // Start is called before the first frame update
         void Awake()
         {
+            GameObject timerObject = GameObject.Find("GlobalTimer"); // change to actual name
+            if (timerObject != null)
+            {
+                internalTimer = timerObject.GetComponent<InternalTimer>();
+            }
+            else
+            {
+                Debug.LogWarning("Timer object not found!");
+            }
             MyRb = GetComponent<BoxCollider2D>();
             catMovement = GetComponent<CatMovement>();
         }
@@ -27,6 +37,7 @@ namespace Assets.Scripts
 
             if (other.gameObject.CompareTag("CatFood"))
             {
+                internalTimer.energyMeter += 40f;
                 Destroy(other.gameObject);
             }
         }
