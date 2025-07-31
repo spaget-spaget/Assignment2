@@ -12,9 +12,9 @@ namespace Assets.Scripts
         public int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
         private Vector3 targetYvalue; // ending y value
         private InternalTimer targetXvalue; // ending x value
-        private Vector3 runningScale = new Vector3(8, 8, 0); // this is the scale of the cat when it is running
-        private Vector3 jumpingScale = new Vector3(12, 12, 0); // this is the scale of the cat when it is jumping
-        private Vector3 crawlingScale = new Vector3(4, 4, 0); // this is the scale of the cat when it is crawling
+        private Vector3 runningScale = new Vector3(1, 1, -3); // this is the scale of the cat when it is running
+        private Vector3 jumpingScale = new Vector3(1.4f, 1.4f, -3); // this is the scale of the cat when it is jumping
+        private Vector3 crawlingScale = new Vector3(0.6f, 0.6f, -3); // this is the scale of the cat when it is crawling
         private bool inScaling = false; // this is a boolean that is used to check if the cat is currently being scaled to a new size
         private bool changingLanes = false; // this is a boolean that is used to check if the cat is currently changing lanes
         private float laneChangingSpeed = 0.2f; // Adjust this value to control the speed in which the cat changes lanes
@@ -74,9 +74,6 @@ namespace Assets.Scripts
                     callStopCrawling(); // calls the StopCrawling function
                 }
             }
-
-
-           
 
         }
 

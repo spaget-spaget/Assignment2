@@ -46,19 +46,19 @@ namespace Assets.Scripts
         {
             if ((LaneMade == false) && (other.gameObject.CompareTag("Player")))
             {
-                LanePosition = new Vector3(this.transform.position.x + 28, 1, 0);
+                LanePosition = new Vector3(this.transform.position.x + 28, 0, 0);
                 GameObject newLanes = Instantiate(LanesPrefab, LanePosition, Quaternion.identity);
                 LaneMade = true;
                 for (int i = 0; i < obstacleCounterLane1; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), 5, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), 4, -1);
                     MakeObstacles();
                     baseNumber += 4;
                 }
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane2; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), 2, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), 1, -1);
                     ObjectRotation = new Vector3(0, 0, 0);
                     MakeCar();
                     baseNumber += 4;
@@ -66,7 +66,7 @@ namespace Assets.Scripts
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane3; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x - 16 - baseNumber, -1, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x - 16 - baseNumber, -2, -1);
                     ObjectRotation = new Vector3(0, 0, 180);
                     MakeCar();
                     baseNumber += 4;
@@ -74,7 +74,7 @@ namespace Assets.Scripts
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane4; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), -4, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, 15)), -5, -1);
                     MakeObstacles();
                     baseNumber += 4;
                 }

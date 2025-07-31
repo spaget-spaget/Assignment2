@@ -243,8 +243,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 1000
   movementSpeed: 1
+  currentSpeed: 1
   speedIncreaseRate: 1
+  energyMeter: 100
+  penaltyAmount: 1
   targetXvalue: {x: 0, y: 0, z: 0}
+  CrouchPenalty: 0
 --- !u!61 &8214274164328096810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -377,8 +381,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 1000
   movementSpeed: 1
+  currentSpeed: 1
   speedIncreaseRate: 0.1
+  energyMeter: 100
+  penaltyAmount: 1
   targetXvalue: {x: 0, y: 0, z: 0}
+  CrouchPenalty: 0
 --- !u!1 &7789301212492277427
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +626,7 @@ Transform:
   m_GameObject: {fileID: 9198330800724620145}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -1.5, z: -10}
+  m_LocalPosition: {x: 0.14999998, y: -1.5, z: -10}
   m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -712,5 +720,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 1000
   movementSpeed: 1
+  currentSpeed: 1
   speedIncreaseRate: 1
+  energyMeter: 100
+  penaltyAmount: 1
   targetXvalue: {x: 0, y: 0, z: 0}
+  CrouchPenalty: 0
