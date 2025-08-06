@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ObjectDeleter : MonoBehaviour
+namespace Assets.Scripts
 {
-    // Start is called before the first frame update
-    private BoxCollider2D MyRb { get; set; }
-    void Awake()
+    public class ObjectDeleter : MonoBehaviour
     {
-        MyRb = GetComponent<BoxCollider2D>();
-    }
-    // Update is called once per frame
-    public void OnTriggerStay2D(Collider2D other) 
-    {
-            Destroy(other.gameObject);
-            return;
+        // Start is called before the first frame update
+        private BoxCollider2D MyRb { get; set; }
+        void Awake()
+        {
+            MyRb = GetComponent<BoxCollider2D>();
+        }
+        // Update is called once per frame
+        public void OnTriggerStay2D(Collider2D other)
+        {
+            if (other.gameObject.tag != ("HumanOwner"))
+            {
+                Destroy(other.gameObject);
+                return;
+            }
+        }
     }
 }

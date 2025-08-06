@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
 {
-    public class CollisionDetector : MonoBehaviour
+    public class CollisionDetectorScript : MonoBehaviour
     {
         private BoxCollider2D MyRb { get; set; }
         private CatMovement catMovement;
@@ -29,17 +30,28 @@ namespace Assets.Scripts
         {
             if ((other.gameObject.CompareTag("Blockades")) || 
             ((other.gameObject.CompareTag("Crouchables")) && (catMovement.state != 3)) || 
-            ((other.gameObject.CompareTag("Jumpable")) && (catMovement.state != 2)))
+            ((other.gameObject.CompareTag("Jumpable")) && (catMovement.state != 2))) 
             {
-                Destroy(gameObject);
+                SceneManager.LoadScene("GameOver");
                 return;
             }
 
             if (other.gameObject.CompareTag("CatFood"))
             {
-                internalTimer.energyMeter += 40f;
+                internalTimer.energyMeter += 40;
+                if (internalTimer.energyMeter > 100) 
+                        { internalTimer.energyMeter = 100; };
+                       
+                
                 Destroy(other.gameObject);
             }
+            if (other.gameObject.CompareTag("HumanOwner"))
+            {
+                SceneManager.LoadScene("GameOver");
+
+                return;
+            }
+
         }
     }
 }

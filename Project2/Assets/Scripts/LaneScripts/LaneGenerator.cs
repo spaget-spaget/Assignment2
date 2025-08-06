@@ -49,14 +49,14 @@ namespace Assets.Scripts
                 GameObject newLanes = Instantiate(LanesPrefab, LanePosition, Quaternion.identity);
                 for (int i = 0; i < obstacleCounterLane1; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y + 4, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 18 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y + 4, -3);
                     MakeObstacles();
                     baseNumber += 4;
                 }
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane2; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y + 1, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 20 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y + 1, -3);
                     ObjectRotation = new Vector3(0, 0, 0);
                     MakeCar();
                     baseNumber += 4;
@@ -64,7 +64,7 @@ namespace Assets.Scripts
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane3; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x - 16 - (baseNumber * 1.4f), this.transform.position.y -2, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x - 20 - (baseNumber * 1.4f), this.transform.position.y -2, -3);
                     ObjectRotation = new Vector3(0, 0, 180);
                     MakeCar();
                     baseNumber += 4;
@@ -72,7 +72,7 @@ namespace Assets.Scripts
                 baseNumber = 0;
                 for (int i = 0; i < obstacleCounterLane4; i++)
                 {
-                    ObjectPosition = new Vector3(this.transform.position.x + 14 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y - 5, -1);
+                    ObjectPosition = new Vector3(this.transform.position.x + 18 + (Random.Range(baseNumber, baseNumber * 1.4f)), this.transform.position.y - 5, -3);
                     MakeObstacles();
                     baseNumber += 4;
                 }

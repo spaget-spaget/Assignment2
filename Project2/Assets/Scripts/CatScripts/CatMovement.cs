@@ -133,6 +133,7 @@ namespace Assets.Scripts
             inScaling = true;
             await ScaleTo(crawlingScale); // scales the cat to the crawling scale
             state = 3; // sets the state to 3, which is the crawling state
+            await Task.Delay(400);
             inScaling = false; // set inScaling to false so that cat can be scaled again
         }
         async Task StopCrawling()
@@ -140,6 +141,7 @@ namespace Assets.Scripts
             inScaling = true;
             await ScaleTo(runningScale); // scales the cat to the running scale
             state = 1; // sets the state to 1, which is the running state
+            await Task.Delay(400);
             inScaling = false; // set inScaling to false so that cat can be scaled again
         }
 

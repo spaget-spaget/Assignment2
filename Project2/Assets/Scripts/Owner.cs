@@ -4,9 +4,10 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class PositionLocker : MonoBehaviour
+    public class Owner : MonoBehaviour
     {
         // Start is called before the first frame update
+
         private InternalTimer internalTimer; // Reference to the script
         void Start()
         {
@@ -22,12 +23,11 @@ namespace Assets.Scripts
             }
         }
 
+
+        // Update is called once per frame
         void Update()
         {
-            Vector3 targetXValue = Vector3.MoveTowards(transform.position,internalTimer.targetXvalue,internalTimer.movementSpeed * Time.deltaTime);
-
-            
-            transform.position = new Vector3(targetXValue.x, -0.05f, -10f);
+            transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, (internalTimer.currentSpeed * 0.90f) * Time.deltaTime);
         }
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - LaneDelete
   - ObjectDelete
   - CatFood
+  - HumanOwner
   layers:
   - Default
   - TransparentFX
