@@ -10,6 +10,8 @@ namespace Assets.Scripts
         private BoxCollider2D MyRb { get; set; }
         private CatMovement catMovement;
         private InternalTimer internalTimer;
+        public int points = 0;
+        public bool invincibleState = false;
         // Start is called before the first frame update
         void Awake()
         {
@@ -28,12 +30,13 @@ namespace Assets.Scripts
 
         public void OnTriggerStay2D(Collider2D other) // checks if the cat has collided with a blockade
         {
-            if ((other.gameObject.CompareTag("Blockades")) || 
-            ((other.gameObject.CompareTag("Crouchables")) && (catMovement.state != 3)) || 
-            ((other.gameObject.CompareTag("Jumpable")) && (catMovement.state != 2))) 
+            if (((other.gameObject.CompareTag("Crouchables")) && (catMovement.state != 3)) && (invincibleState == false) ||
+            ((other.gameObject.CompareTag("Jumpable")) && (catMovement.state != 2)) && (invincibleState == false))
             {
-                SceneManager.LoadScene("GameOver");
+
+                StartCoroutine(HitObstaclePenalty());
                 return;
+                
             }
 
             if (other.gameObject.CompareTag("CatFood"))
@@ -41,17 +44,26 @@ namespace Assets.Scripts
                 internalTimer.energyMeter += 40;
                 if (internalTimer.energyMeter > 100) 
                         { internalTimer.energyMeter = 100; };
-                       
+                points += 10;
                 
                 Destroy(other.gameObject);
             }
-            if (other.gameObject.CompareTag("HumanOwner"))
+            if ((other.gameObject.CompareTag("HumanOwner")) ||
+            (other.gameObject.CompareTag("Blockades")))
             {
                 SceneManager.LoadScene("GameOver");
-
                 return;
             }
+        }
+        private IEnumerator HitObstaclePenalty()
+        {
+            invincibleState = true;
+            internalTimer.hitPenalty = 0.30f;
 
+            yield return new WaitForSeconds(1.5f); // delay for 1 second
+
+            internalTimer.hitPenalty = 0f;
+            invincibleState = false;
         }
     }
 }

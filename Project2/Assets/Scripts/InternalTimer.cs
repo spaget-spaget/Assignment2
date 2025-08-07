@@ -9,7 +9,7 @@ namespace Assets.Scripts
         public float xPosition = 0f;
         public float movementSpeed = 1f;
         public float currentSpeed = 1f;
-        private float elapsedTime = 0f;
+        public float elapsedTime = 0f;
         private bool isRunning = false;
         private bool waitASec = false;
         private float waitTime = 0f;
@@ -18,6 +18,7 @@ namespace Assets.Scripts
         public float penaltyAmount = 1.00f;
         public Vector3 targetXvalue;
         public float CrouchPenalty = 0f;
+        public float hitPenalty = 0f;
         private CatMovement catMovement;
 
         // Start is called before the first frame update
@@ -103,7 +104,7 @@ namespace Assets.Scripts
             }
 
             
-            movementSpeed = currentSpeed * (penaltyAmount - CrouchPenalty);
+            movementSpeed = currentSpeed * (penaltyAmount - CrouchPenalty - hitPenalty);
 
 
         }
