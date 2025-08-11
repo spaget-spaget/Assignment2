@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: ffca8c501e79ee548a2986d2ea2430d0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - laneTransitionPrefab: {fileID: 4475775667723674633, guid: df1b0559041f38540ba7029903136a4b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

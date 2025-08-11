@@ -200,7 +200,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.7}
+  m_Size: {x: 1, y: 1.7}
   m_EdgeRadius: 0
 --- !u!50 &6919040136098231186
 Rigidbody2D:
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 3043260542735164184}
   - component: {fileID: 6722814831184094172}
   - component: {fileID: 4256286484631978904}
-  - component: {fileID: 733367243522380396}
+  - component: {fileID: 7252082067818478923}
   m_Layer: 0
   m_Name: ObjectDeleterFront
   m_TagString: ObjectDelete
@@ -335,7 +335,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &733367243522380396
+--- !u!114 &7252082067818478923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7789301212492277427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f0aac257f4e37846ab8423e6bb49f57, type: 3}
+  m_Script: {fileID: 11500000, guid: d8b265ed272cbef43a005e00d0af4019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9090993437581725001
@@ -462,6 +462,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 9090993437581725001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f0aac257f4e37846ab8423e6bb49f57, type: 3}
+  m_Script: {fileID: 11500000, guid: d8b265ed272cbef43a005e00d0af4019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
