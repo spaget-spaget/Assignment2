@@ -18,13 +18,17 @@ namespace Assets.Scripts
         private bool changingLanes = false; // this is a boolean that is used to check if the cat is currently changing lanes
         private float laneChangingSpeed = 0.2f; // Adjust this value to control the speed in which the cat changes lanes
         private float sizeChangingTime = 0.2f; // Adjust this value to control the speed in which the cat changes size
-        public float yPosition = 0;
-        public float bottomLanePosition = -11;
-        private InternalTimer internalTimer; // Reference to the script
+        public float yPosition = 0; // current Y position. Easier to manipulate
+        public float bottomLanePosition = -11; // The Y position of the cat at the very bottom lane (lane 0)
+
+        private InternalTimer internalTimer; // Reference to the timer script
+        //Audio Variables
+        public AudioSource audioSource; 
+        public AudioClip jumpSound;
         void Start()
         {
-            // Find the GameObject that has InternalTimer
-            GameObject timerObject = GameObject.Find("GlobalTimer"); // change to actual name
+            // Find the Global Timer Object that has the InternalTimer script
+            GameObject timerObject = GameObject.Find("GlobalTimer"); 
             if (timerObject != null)
             {
                 internalTimer = timerObject.GetComponent<InternalTimer>();
@@ -33,15 +37,17 @@ namespace Assets.Scripts
             {
                 Debug.LogWarning("Timer object not found!");
             }
+            // initial calculation of y value
             yPosition = (bottomLanePosition + (CurrentPosition * 3));
         }
 
         // Update is called once per frame
         void Update()
         {
+            // checks if the timer is running
             if (internalTimer.isRunning == true)
             {
-                transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, internalTimer.movementSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, internalTimer.movementSpeed * Time.deltaTime); // moves the cat to the target position
                 if ((CurrentPosition < 3) && (changingLanes == false)) // checks if the cat is at the top row (which is row 3). if cat is in row 3, it wont be able to move up
                 {
                     if (Input.GetKey("w")) // checks if the player has pressed the w key
@@ -65,6 +71,7 @@ namespace Assets.Scripts
                     if (state == 1) // checks if the cat is in the running state, which is 1
                     {
                         callCatJump(); // calls the CatJump function
+                        audioSource.PlayOneShot(jumpSound);
                     }
                 }
                 if ((Input.GetKey("e")) && (inScaling == false))// checks if the player has pressed the a key
@@ -109,10 +116,11 @@ namespace Assets.Scripts
         }
 
 
-
+        // Up and Down movements
         async Task MoveUp()
         {
-            changingLanes = true;
+            changingLanes = true; // set changingLanes to true so that cat cannot change lanes
+            // Math needed to change lanes
             CurrentPosition += 1;
             yPosition = (bottomLanePosition + (CurrentPosition * 3));
             targetYvalue = new Vector3(transform.position.x + (internalTimer.movementSpeed * laneChangingSpeed), yPosition, transform.position.z);
@@ -129,12 +137,14 @@ namespace Assets.Scripts
             targetYvalue = new Vector3(transform.position.x + (internalTimer.movementSpeed * laneChangingSpeed), yPosition, transform.position.z);
             await MoveTo(targetYvalue);
             
-            changingLanes = false; // set changingLanes to false so that cat can change lanes again
+            changingLanes = false; 
 
         }
+
+        // crawl and jump movements
         async Task CatCrawl() //CatCrawl function
         {
-            inScaling = true;
+            inScaling = true; // set inScaling to true so that cat cannot be scaled
             await ScaleTo(crawlingScale); // scales the cat to the crawling scale
             state = 3; // sets the state to 3, which is the crawling state
             await Task.Delay(400);
@@ -143,17 +153,18 @@ namespace Assets.Scripts
         async Task StopCrawling()
         {
             inScaling = true;
-            await ScaleTo(runningScale); // scales the cat to the running scale
-            state = 1; // sets the state to 1, which is the running state
+            await ScaleTo(runningScale);
+            state = 1; 
             await Task.Delay(400);
-            inScaling = false; // set inScaling to false so that cat can be scaled again
+            inScaling = false; 
         }
 
         async Task CatJump()
         {
+            
             inScaling = true;
             state = 2;
-
+            
             // Smoothly scale to jumpingScale
             await ScaleTo(jumpingScale);
 
@@ -199,6 +210,6 @@ namespace Assets.Scripts
 
             transform.position = targetPosition; // ensure final scale is exactly set
 
-        }
+        } // The short version is that this code gradually allows the cat to change size and move lanes rather than instantly being scaled and moved.
     }
 }

@@ -19,6 +19,7 @@ namespace Assets.Scripts
             {
                 Debug.LogWarning("PlayerCat object not found!");
             }
+            //Sets the initial position of the camera
             transform.position = new Vector3(playerCatObject.transform.position.x, playerCatObject.transform.position.y -1.5f, transform.position.z);
         }
 
@@ -26,6 +27,7 @@ namespace Assets.Scripts
         {
             if (playerCatScript != null)
             {
+                //Updates the position of the camera
                 Vector3 targetPosition = playerCatScript.transform.position;
                 transform.position = new Vector3(targetPosition.x, transform.position.y , -10f);
             }

@@ -12,7 +12,7 @@ namespace Assets.Scripts
         void Start()
         {
             // Find the GameObject that has InternalTimer
-            GameObject timerObject = GameObject.Find("GlobalTimer"); // change to actual name
+            GameObject timerObject = GameObject.Find("GlobalTimer");
             if (timerObject != null)
             {
                 internalTimer = timerObject.GetComponent<InternalTimer>();
@@ -27,9 +27,12 @@ namespace Assets.Scripts
         // Update is called once per frame
         void Update()
         {
+            //While Running
             if (internalTimer.isRunning == true)
             {
+                //Moves the Owner
                 transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, (internalTimer.currentSpeed * 0.92f) * Time.deltaTime);
+                //Math is set so that the human is nearly the same speed as the cat while its crouching.
             }
         }
     }

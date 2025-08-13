@@ -6,6 +6,7 @@ namespace Assets.Scripts
 {
     public class TeleportBack : MonoBehaviour
     {
+        //Variables
         public GameObject laneTransitionPrefab;
         private CatMovement playerCatScript;
         private float returnXValue = -28;
@@ -15,6 +16,7 @@ namespace Assets.Scripts
 
         void Start()
         {
+            //Find human owner (The one who acts as a kill wall)
             Owner = GameObject.Find("HumanOwner");
             GameObject playerCatObject = GameObject.Find("PlayerCat");
             if (playerCatObject != null)
@@ -25,6 +27,7 @@ namespace Assets.Scripts
             {
                 Debug.LogWarning("PlayerCat object not found!");
             }
+            //Find lane position
             lanePosition = new Vector3(returnXValue, (playerCatScript.bottomLanePosition + 4.95f), 0f);
 
         }
@@ -39,12 +42,14 @@ namespace Assets.Scripts
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                Vector3 playerPos = other.gameObject.transform.position;
-                float difference = (returnXValue - playerPos.x);
-                playerPos.x = returnXValue;
-                other.gameObject.transform.position = playerPos;
-                Instantiate(laneTransitionPrefab, lanePosition, Quaternion.identity);
+                
+                Vector3 playerPos = other.gameObject.transform.position; // Find Player current pos
+                float difference = (returnXValue - playerPos.x); // Difference between New Pos and Old Pos
+                playerPos.x = returnXValue; // Set New Pos
+                other.gameObject.transform.position = playerPos; //Teleports
+                Instantiate(laneTransitionPrefab, lanePosition, Quaternion.identity); // Creates a lane on the Player's new position
 
+                //Does the same for the human owner
                 Vector3 OwnerPosition = Owner.gameObject.transform.position;
                 OwnerPosition.x += difference;
                 Owner.gameObject.transform.position = OwnerPosition;

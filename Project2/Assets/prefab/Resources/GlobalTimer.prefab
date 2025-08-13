@@ -46,11 +46,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 1000
   movementSpeed: 5
-  currentSpeed: 1
+  currentSpeed: 2
   elapsedTime: 0
-  speedIncreaseRate: 2
+  isRunning: 0
+  speedIncreaseRate: 1
   energyMeter: 100
   penaltyAmount: 1
   targetXvalue: {x: 0, y: 0, z: 0}
   CrouchPenalty: 0
   hitPenalty: 0
+  laneTransition: 0
+  numberOfLanes: 0
+  numberOfLanesNeeded: 1
+  endingLane: 0
+  backgroundMusic: {fileID: 0}

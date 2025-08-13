@@ -6,7 +6,7 @@ namespace Assets.Scripts
 {
     public class TransitioningLanes : MonoBehaviour
     {
-        // Start is called before the first frame update
+        //Variables are declared
         public GameObject laneTransitionPrefab;
         public bool LaneMaking = true;
         private InternalTimer internalTimer;
@@ -14,7 +14,7 @@ namespace Assets.Scripts
         private int waitUntil = 0;
         public void Start()
         {
-            GameObject timerObject = GameObject.Find("GlobalTimer"); // change to actual name
+            GameObject timerObject = GameObject.Find("GlobalTimer"); // Find InternalTimer
             if (timerObject != null)
             {
                 internalTimer = timerObject.GetComponent<InternalTimer>();
@@ -26,6 +26,7 @@ namespace Assets.Scripts
         }
         void Update()
         {
+            //Prefabs are loaded
             if (laneTransitionPrefab == null)
             {
                 laneTransitionPrefab = Resources.Load<GameObject>("prefab/Crossroads");
@@ -35,6 +36,8 @@ namespace Assets.Scripts
         // Update is called once per frame
         public void OnTriggerStay2D(Collider2D other)
         {
+
+            //Makes the crossroads lane
             if ((other.gameObject.CompareTag("Player")) && (LaneMaking == true))
             {
                 {
@@ -50,6 +53,6 @@ namespace Assets.Scripts
             {
                 LaneMaking = true;
             }
-        }
+        }//Why OnTriggerStay2D rather than OnTriggerEnter2D? just in case the movements somehow dont get detected.
     }
 }

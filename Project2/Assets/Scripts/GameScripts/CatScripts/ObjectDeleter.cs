@@ -6,6 +6,7 @@ namespace Assets.Scripts
     public class ObjectDeleter : MonoBehaviour
     {
         // Start is called before the first frame update
+        //Invisible barrier code. Made to just delete anything except for a few exceptions
         private BoxCollider2D MyRb { get; set; }
         void Awake()
         {

@@ -8,6 +8,7 @@ namespace Assets.Scripts
     {
         private BoxCollider2D MyRb { get; set; }
 
+        // Prefabs
         public GameObject LanesPrefab;
         public GameObject VehiclePrefab;
         public GameObject ObjectPrefab;
@@ -16,10 +17,12 @@ namespace Assets.Scripts
         public GameObject BlockablePrefab;
         public GameObject WinningShopPrefab;
 
+        //Positions
         private Vector3 LanePosition { get; set; }
         private Vector3 ObjectPosition { get; set; }
         private Vector3 ObjectRotation { get; set; }
 
+        //Variables
         private bool ObjectNumbers = false;
         private int obstacleCounterLane1 = 0;
         private int obstacleCounterLane2 = 0;
@@ -50,6 +53,7 @@ namespace Assets.Scripts
 
         public void Update()
         {
+            // Generate random numbers for each lane if it hasnt already
             if (!ObjectNumbers)
             {
                 obstacleCounterLane1 = Random.Range(1, 4);
@@ -58,6 +62,7 @@ namespace Assets.Scripts
                 obstacleCounterLane4 = Random.Range(1, 4);
                 ObjectNumbers = true;
             }
+            //Loads all the prefabs if it hasnt already
             if ((ObjectPrefab == null || VehiclePrefab == null || LanesPrefab == null || CatFoodPrefab == null || LaneTransitionPrefab == null || BlockablePrefab == null || WinningShopPrefab == null))
             {
                 ObjectPrefab = Resources.Load<GameObject>("prefab/TrashCan");
@@ -72,23 +77,30 @@ namespace Assets.Scripts
 
         public void OnTriggerEnter2D(Collider2D other)
         {
+            //Finds the position for the next lane
             LanePosition = new Vector3(transform.position.x + 28, transform.position.y, 0);
 
+            //If player touches
             if (other.gameObject.CompareTag("Player"))
             {
-                if (internalTimer.laneTransition == 8 && !internalTimer.endingLane)
+                //Determines what lane to make
+                if (internalTimer.laneTransition == 8 && !internalTimer.endingLane) // Looping lane. 
+                    //Why looping lane? Its more convenient rather than having the cat run until x position 9999.
                 {
                     LanePosition = new Vector3(transform.position.x + 26, transform.position.y, 0); 
                     GameObject newLane = Instantiate(LaneTransitionPrefab, LanePosition, Quaternion.identity);
                     internalTimer.laneTransition = 0;
                 }
+                //Makes the ending lane
                 else if (internalTimer.endingLane)
                 {
                     LanePosition = new Vector3(transform.position.x + 28, transform.position.y - 0.51f, 0);
                     GameObject newLane = Instantiate(WinningShopPrefab, LanePosition, Quaternion.identity);
                 }
+                //Standard lane
                 else
                 {
+                    //Lane prefab is made
                     GameObject newLane = Instantiate(LanesPrefab, LanePosition, Quaternion.identity);
 
                     // Lane 1 obstacles
@@ -136,6 +148,7 @@ namespace Assets.Scripts
             }
         }
 
+        // Randomizes the objects that spawns. its either food, trash bins, blockades, or cars
         public void MakeObstacles()
         {
             choice = Random.Range(1, 401);
