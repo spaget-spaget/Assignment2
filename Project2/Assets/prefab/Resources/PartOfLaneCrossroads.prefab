@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1751892779094868941}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.49, y: -5, z: -0.042567212}
+  m_LocalPosition: {x: -8.84, y: -5, z: -0.042567212}
   m_LocalScale: {x: 10, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 2178962384526980606}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: -2, z: -0.042567212}
+  m_LocalPosition: {x: 0, y: -2, z: -0.042567212}
   m_LocalScale: {x: 28, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -198,7 +198,7 @@ Transform:
   m_GameObject: {fileID: 2282569120193008320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 4, z: -0.042567212}
+  m_LocalPosition: {x: -8.83, y: 4, z: -0.042567212}
   m_LocalScale: {x: 10.090079, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -366,7 +366,7 @@ Transform:
   m_GameObject: {fileID: 2333078232154518594}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 1, z: -0.042567212}
+  m_LocalPosition: {x: 0, y: 1, z: -0.042567212}
   m_LocalScale: {x: 28, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -874,7 +874,7 @@ Transform:
   m_GameObject: {fileID: 6234034356250111640}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.49, y: 4, z: -0.042567212}
+  m_LocalPosition: {x: 7.89, y: 4, z: -0.042567212}
   m_LocalScale: {x: 12.015464, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -958,7 +958,7 @@ Transform:
   m_GameObject: {fileID: 6360598601029093482}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.89, y: -4.98, z: -0.042567212}
+  m_LocalPosition: {x: 8.48, y: -4.98, z: -0.042567212}
   m_LocalScale: {x: 11, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1109,9 +1109,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1004687863337589164}
-  - component: {fileID: 1642691470842191725}
   m_Layer: 0
-  m_Name: TransitioningLane
+  m_Name: PartOfLaneCrossroads
   m_TagString: Lanes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1138,23 +1137,6 @@ Transform:
   - {fileID: 913380999198636791}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1642691470842191725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8249390198001646957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47f729dbcd7150347ba04c2bece3f968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LanesPrefab: {fileID: 8249390198001646957}
-  VehiclePrefab: {fileID: 5990755647855730922, guid: 6975801e88144f24a9ff52e20cc92769, type: 3}
-  ObjectPrefab: {fileID: 4003722687620280440, guid: 1fa09315736e88b45a9ae18b2e19fbaf, type: 3}
-  laneTransitionPrefab: {fileID: 7579738927084727350, guid: 671ab3ec45ec72143bcaea34f30c86d3, type: 3}
-  CatFoodPrefab: {fileID: 4184787837632382400, guid: 9143a16726796f745b3697e78ca4dff6, type: 3}
 --- !u!1 &8628104453466704010
 GameObject:
   m_ObjectHideFlags: 0

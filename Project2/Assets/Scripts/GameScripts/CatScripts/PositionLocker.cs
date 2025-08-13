@@ -19,6 +19,7 @@ namespace Assets.Scripts
             {
                 Debug.LogWarning("PlayerCat object not found!");
             }
+            transform.position = new Vector3(playerCatObject.transform.position.x, playerCatObject.transform.position.y -1.5f, transform.position.z);
         }
 
         void Update()
@@ -26,7 +27,7 @@ namespace Assets.Scripts
             if (playerCatScript != null)
             {
                 Vector3 targetPosition = playerCatScript.transform.position;
-                transform.position = new Vector3(targetPosition.x, -0.53f, -10f);
+                transform.position = new Vector3(targetPosition.x, transform.position.y , -10f);
             }
         }
     }

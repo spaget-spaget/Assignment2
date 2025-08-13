@@ -14,7 +14,7 @@ namespace Assets.Scripts
         // Update is called once per frame
         public void OnTriggerStay2D(Collider2D other)
         {
-            if ((other.gameObject.tag != ("HumanOwner"))|| (other.gameObject.tag != ("StarterLane")))
+            if ((other.gameObject.tag != ("HumanOwner")) && (other.gameObject.tag != ("InvisibleDeleteBarriers")) && (other.gameObject.tag != ("ObjectDelete")))
             {
                 Destroy(other.gameObject);
                 return;

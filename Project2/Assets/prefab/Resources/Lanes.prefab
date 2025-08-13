@@ -362,7 +362,7 @@ Transform:
   m_GameObject: {fileID: 1453135777871744285}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 1, z: -0.042567212}
+  m_LocalPosition: {x: 0, y: 1, z: -0.042567212}
   m_LocalScale: {x: 28, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -534,7 +534,7 @@ Transform:
   m_GameObject: {fileID: 3060032937658141857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: -2, z: -0.042567212}
+  m_LocalPosition: {x: 0, y: -2, z: -0.042567212}
   m_LocalScale: {x: 28, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -622,7 +622,7 @@ Transform:
   m_GameObject: {fileID: 3163498935986793375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4186, y: 4, z: -0.042567212}
+  m_LocalPosition: {x: 0, y: 4, z: -0.042567212}
   m_LocalScale: {x: 28, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -706,7 +706,7 @@ Transform:
   m_GameObject: {fileID: 3172126451029080722}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4186, y: -5, z: -0.042567212}
+  m_LocalPosition: {x: 0, y: -5, z: -0.042567212}
   m_LocalScale: {x: 28, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -875,7 +875,7 @@ Transform:
   m_GameObject: {fileID: 5058080788097713202}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.42, y: 0.46, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -946,8 +946,10 @@ MonoBehaviour:
   LanesPrefab: {fileID: 5058080788097713202}
   VehiclePrefab: {fileID: 5990755647855730922, guid: 6975801e88144f24a9ff52e20cc92769, type: 3}
   ObjectPrefab: {fileID: 4003722687620280440, guid: 1fa09315736e88b45a9ae18b2e19fbaf, type: 3}
-  laneTransitionPrefab: {fileID: 7579738927084727350, guid: 671ab3ec45ec72143bcaea34f30c86d3, type: 3}
+  LaneTransitionPrefab: {fileID: 7579738927084727350, guid: 671ab3ec45ec72143bcaea34f30c86d3, type: 3}
   CatFoodPrefab: {fileID: 4184787837632382400, guid: 9143a16726796f745b3697e78ca4dff6, type: 3}
+  BlockablePrefab: {fileID: 589051507083428914, guid: 15beda7fe13a6e943bb1929efd92c799, type: 3}
+  WinningShopPrefab: {fileID: 2508913546700741247, guid: 03b1b19bc497aba48b31dac53498aad3, type: 3}
 --- !u!1 &7943289068578014231
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +976,7 @@ Transform:
   m_GameObject: {fileID: 7943289068578014231}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 1.4000015, y: -0.5, z: -2.0425673}
+  m_LocalPosition: {x: 0, y: -0.5, z: -2.0425673}
   m_LocalScale: {x: 28, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

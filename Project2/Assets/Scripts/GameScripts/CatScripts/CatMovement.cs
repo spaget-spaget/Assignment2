@@ -8,17 +8,18 @@ namespace Assets.Scripts
     public class CatMovement : MonoBehaviour
     {
         //Movement Variables
-        private int CurrentPosition = 0; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
+        private int CurrentPosition = 2; // Current row. There are 4 rows, starting at 0 and ending at 3 from bottom to top. cat starts at row 2, which is the first row above the middle.
         public int state = 1; // Running = 1, Jumping = 2, Crawling = 3. its better than using String
         private Vector3 targetYvalue; // ending y value
-        private Vector3 runningScale = new Vector3(1, 1, -3); // this is the scale of the cat when it is running
-        private Vector3 jumpingScale = new Vector3(1.4f, 1.4f, -3); // this is the scale of the cat when it is jumping
-        private Vector3 crawlingScale = new Vector3(0.6f, 0.6f, -3); // this is the scale of the cat when it is crawling
+        private Vector3 runningScale = new Vector3(8, 8, -3); // this is the scale of the cat when it is running
+        private Vector3 jumpingScale = new Vector3(12f, 12f, -3); // this is the scale of the cat when it is jumping
+        private Vector3 crawlingScale = new Vector3(4f, 4f, -3); // this is the scale of the cat when it is crawling
         private bool inScaling = false; // this is a boolean that is used to check if the cat is currently being scaled to a new size
         private bool changingLanes = false; // this is a boolean that is used to check if the cat is currently changing lanes
         private float laneChangingSpeed = 0.2f; // Adjust this value to control the speed in which the cat changes lanes
         private float sizeChangingTime = 0.2f; // Adjust this value to control the speed in which the cat changes size
         public float yPosition = 0;
+        public float bottomLanePosition = -11;
         private InternalTimer internalTimer; // Reference to the script
         void Start()
         {
@@ -32,52 +33,55 @@ namespace Assets.Scripts
             {
                 Debug.LogWarning("Timer object not found!");
             }
-            yPosition = (1 + (CurrentPosition * 3));
+            yPosition = (bottomLanePosition + (CurrentPosition * 3));
         }
 
         // Update is called once per frame
         void Update()
         {
-            transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, internalTimer.movementSpeed * Time.deltaTime);
-            if ((CurrentPosition < 1) && (changingLanes == false)) // checks if the cat is at the top row (which is row 3). if cat is in row 3, it wont be able to move up
+            if (internalTimer.isRunning == true)
             {
-                if (Input.GetKey("w")) // checks if the player has pressed the w key
+                transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, internalTimer.movementSpeed * Time.deltaTime);
+                if ((CurrentPosition < 3) && (changingLanes == false)) // checks if the cat is at the top row (which is row 3). if cat is in row 3, it wont be able to move up
                 {
-                    callMoveUp(); // moves the cat up one row
+                    if (Input.GetKey("w")) // checks if the player has pressed the w key
+                    {
+                        callMoveUp(); // moves the cat up one row
+                    }
                 }
+                if ((CurrentPosition > 0) && (changingLanes == false)) // checks if the cat is at the bottom row (which is row 0). if cat is in row 0, it wont be able to move down
+                {
+
+                    if (Input.GetKey("s")) // checks if the player has pressed the s key
+                    {
+                        callMoveDown(); // moves the cat down one row
+                    }
+                }
+
+
+                if ((Input.GetKey("space")) && (inScaling == false)) // checks if the player has pressed the space key
+                {
+
+                    if (state == 1) // checks if the cat is in the running state, which is 1
+                    {
+                        callCatJump(); // calls the CatJump function
+                    }
+                }
+                if ((Input.GetKey("e")) && (inScaling == false))// checks if the player has pressed the a key
+                {
+
+
+                    if (state == 1) // checks if the cat is in the running state, which is 1
+                    {
+                        callCatCrawl(); // calls the CatCrawl function
+                    }
+                    else if (state == 3) // checks if the cat is in the crawling state, which is 3
+                    {
+                        callStopCrawling(); // calls the StopCrawling function
+                    }
+                }
+
             }
-            if ((CurrentPosition > -2) && (changingLanes == false)) // checks if the cat is at the bottom row (which is row 0). if cat is in row 0, it wont be able to move down
-            {
-
-                if (Input.GetKey("s")) // checks if the player has pressed the s key
-                {
-                    callMoveDown(); // moves the cat down one row
-                }
-            }
-
-
-            if ((Input.GetKey("space")) && (inScaling == false)) // checks if the player has pressed the space key
-            {
-
-                if (state == 1) // checks if the cat is in the running state, which is 1
-                {
-                    callCatJump(); // calls the CatJump function
-                }
-            }
-            if ((Input.GetKey("a")) && (inScaling == false))// checks if the player has pressed the a key
-            {
-
-
-                if (state == 1) // checks if the cat is in the running state, which is 1
-                {
-                    callCatCrawl(); // calls the CatCrawl function
-                }
-                else if (state == 3) // checks if the cat is in the crawling state, which is 3
-                {
-                    callStopCrawling(); // calls the StopCrawling function
-                }
-            }
-           
         }
 
 
@@ -110,7 +114,7 @@ namespace Assets.Scripts
         {
             changingLanes = true;
             CurrentPosition += 1;
-            yPosition = (1 + (CurrentPosition * 3));
+            yPosition = (bottomLanePosition + (CurrentPosition * 3));
             targetYvalue = new Vector3(transform.position.x + (internalTimer.movementSpeed * laneChangingSpeed), yPosition, transform.position.z);
 
             await MoveTo(targetYvalue);
@@ -121,7 +125,7 @@ namespace Assets.Scripts
         {
             changingLanes = true;
             CurrentPosition -= 1;
-            yPosition = (1 + (CurrentPosition * 3));
+            yPosition = (bottomLanePosition + (CurrentPosition * 3));
             targetYvalue = new Vector3(transform.position.x + (internalTimer.movementSpeed * laneChangingSpeed), yPosition, transform.position.z);
             await MoveTo(targetYvalue);
             

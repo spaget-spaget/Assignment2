@@ -6,7 +6,7 @@ namespace Assets.Scripts
 {
     public class InternalTimer : MonoBehaviour
     {
-        public float xPosition = 0f;
+        public float xPosition = 1000f;
         public float movementSpeed = 1f;
         public float currentSpeed = 1f;
         public float elapsedTime = 0f;
@@ -20,6 +20,9 @@ namespace Assets.Scripts
         public float CrouchPenalty = 0f;
         public float hitPenalty = 0f;
         public int laneTransition = 0;
+        public int numberOfLanes = 0;
+        public int numberOfLanesNeeded = 100;
+        public bool endingLane = false;
         private CatMovement catMovement;
         private CollisionDetectorScript collisionDetectorScript;
 
@@ -38,7 +41,7 @@ namespace Assets.Scripts
             {
                 Debug.LogWarning("Player object not found!");
             }
-            
+            numberOfLanes = 0;
         }
         public void Awake()
         {
@@ -109,7 +112,10 @@ namespace Assets.Scripts
                 penaltyAmount = 1.00f;
             }
 
-            
+            if (numberOfLanes == numberOfLanesNeeded)
+            {
+                endingLane = true;
+            }
             movementSpeed = currentSpeed * (penaltyAmount - CrouchPenalty - hitPenalty);
 
 

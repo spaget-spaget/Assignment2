@@ -19,6 +19,8 @@ TagManager:
   - Lanes
   - StarterLane
   - TrasitioningLanes
+  - InvisibleDeleteBarriers
+  - EndingLane
   layers:
   - Default
   - TransparentFX

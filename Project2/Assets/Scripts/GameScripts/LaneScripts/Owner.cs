@@ -27,7 +27,10 @@ namespace Assets.Scripts
         // Update is called once per frame
         void Update()
         {
-            transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, (internalTimer.currentSpeed * 0.92f) * Time.deltaTime);
+            if (internalTimer.isRunning == true)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, internalTimer.targetXvalue, (internalTimer.currentSpeed * 0.92f) * Time.deltaTime);
+            }
         }
     }
 }

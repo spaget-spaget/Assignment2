@@ -3,7 +3,8 @@ guid: 8f0129254d909cd4190d575acf8c1901
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - laneTransitionPrefab: {fileID: 6691766546555290438, guid: 6c043094529e5c64cb33023c1c4af448, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
