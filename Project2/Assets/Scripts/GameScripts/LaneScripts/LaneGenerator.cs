@@ -6,35 +6,35 @@ namespace Assets.Scripts
 {
     public class LaneGenerator : MonoBehaviour
     {
-        private BoxCollider2D MyRb { get; set; }
+        private BoxCollider2D myRb;
 
-        // Prefabs
-        public GameObject LanesPrefab;
-        public GameObject VehiclePrefab;
-        public GameObject ObjectPrefab;
-        public GameObject LaneTransitionPrefab;
-        public GameObject CatFoodPrefab;
-        public GameObject BlockablePrefab;
-        public GameObject WinningShopPrefab;
+        // Prefabs (assign in Inspector or leave empty to auto-load from Resources)
+        [SerializeField] public GameObject lanesPrefab;
+        [SerializeField] public GameObject vehiclePrefab;
+        [SerializeField] public GameObject objectPrefab;
+        [SerializeField] public GameObject laneTransitionPrefab;
+        [SerializeField] public GameObject catFoodPrefab;
+        [SerializeField] public GameObject blockablePrefab;
+        [SerializeField] public GameObject winningShopPrefab;
 
-        //Positions
-        private Vector3 LanePosition { get; set; }
-        private Vector3 ObjectPosition { get; set; }
-        private Vector3 ObjectRotation { get; set; }
+        // Positions
+        public Vector3 lanePosition;
+        public Vector3 objectPosition;
+        public Vector3 objectRotation;
 
-        //Variables
-        private bool ObjectNumbers = false;
-        private int obstacleCounterLane1 = 0;
-        private int obstacleCounterLane2 = 0;
-        private int obstacleCounterLane3 = 0;
-        private int obstacleCounterLane4 = 0;
-        private int baseNumber = 0;
-        private int choice = 0;
-        private bool foodCreated = false;
+        // Variables
+        public bool objectNumbersGenerated = false;
+        public int obstacleCounterLane1 = 0;
+        public int obstacleCounterLane2 = 0;
+        public int obstacleCounterLane3 = 0;
+        public int obstacleCounterLane4 = 0;
+        public int baseNumber = 0;
+        public int choice = 0;
+        public bool foodCreated = false;
 
         private InternalTimer internalTimer;
 
-        public void Start()
+        private void Start()
         {
             // Find and assign timer
             GameObject timerObject = GameObject.Find("GlobalTimer");
@@ -47,144 +47,26 @@ namespace Assets.Scripts
                 Debug.LogWarning("Timer object not found!");
             }
 
-            // Load all prefabs at start so they’re never null
-            
+            // Load prefabs from Resources only if not assigned in Inspector
+            if (objectPrefab == null) objectPrefab = Resources.Load<GameObject>("prefab/TrashCan");
+            if (vehiclePrefab == null) vehiclePrefab = Resources.Load<GameObject>("prefab/Car");
+            if (lanesPrefab == null) lanesPrefab = Resources.Load<GameObject>("prefab/Lanes");
+            if (catFoodPrefab == null) catFoodPrefab = Resources.Load<GameObject>("prefab/CatFood");
+            if (laneTransitionPrefab == null) laneTransitionPrefab = Resources.Load<GameObject>("prefab/StartingLane");
+            if (blockablePrefab == null) blockablePrefab = Resources.Load<GameObject>("prefab/Blockable");
+            if (winningShopPrefab == null) winningShopPrefab = Resources.Load<GameObject>("prefab/EndingLane");
         }
 
-        public void Update()
+        private void Update()
         {
-            // Generate random numbers for each lane if it hasnt already
-            if (!ObjectNumbers)
+            // Generate random numbers for each lane if not already generated
+            if (!objectNumbersGenerated)
             {
                 obstacleCounterLane1 = Random.Range(1, 4);
                 obstacleCounterLane2 = Random.Range(1, 3);
                 obstacleCounterLane3 = Random.Range(1, 3);
                 obstacleCounterLane4 = Random.Range(1, 4);
-                ObjectNumbers = true;
-            }
-            //Loads all the prefabs if it hasnt already
-            if ((ObjectPrefab == null || VehiclePrefab == null || LanesPrefab == null || CatFoodPrefab == null || LaneTransitionPrefab == null || BlockablePrefab == null || WinningShopPrefab == null))
-            {
-                ObjectPrefab = Resources.Load<GameObject>("prefab/TrashCan");
-                VehiclePrefab = Resources.Load<GameObject>("prefab/Car");
-                LanesPrefab = Resources.Load<GameObject>("prefab/Lanes");
-                CatFoodPrefab = Resources.Load<GameObject>("prefab/CatFood");
-                LaneTransitionPrefab = Resources.Load<GameObject>("prefab/StartingLane");
-                BlockablePrefab = Resources.Load<GameObject>("prefab/Blockable");
-                WinningShopPrefab = Resources.Load<GameObject>("prefab/EndingLane");
-            }
-        }
-
-        public void OnTriggerEnter2D(Collider2D other)
-        {
-            //Finds the position for the next lane
-            LanePosition = new Vector3(transform.position.x + 28, transform.position.y, 0);
-
-            //If player touches
-            if (other.gameObject.CompareTag("Player"))
-            {
-                //Determines what lane to make
-                if (internalTimer.laneTransition == 8 && !internalTimer.endingLane) // Looping lane. 
-                    //Why looping lane? Its more convenient rather than having the cat run until x position 9999.
-                {
-                    LanePosition = new Vector3(transform.position.x + 26, transform.position.y, 0); 
-                    GameObject newLane = Instantiate(LaneTransitionPrefab, LanePosition, Quaternion.identity);
-                    internalTimer.laneTransition = 0;
-                }
-                //Makes the ending lane
-                else if (internalTimer.endingLane)
-                {
-                    LanePosition = new Vector3(transform.position.x + 28, transform.position.y - 0.51f, 0);
-                    GameObject newLane = Instantiate(WinningShopPrefab, LanePosition, Quaternion.identity);
-                }
-                //Standard lane
-                else
-                {
-                    //Lane prefab is made
-                    GameObject newLane = Instantiate(LanesPrefab, LanePosition, Quaternion.identity);
-
-                    // Lane 1 obstacles
-                    for (int i = 0; i < obstacleCounterLane1; i++)
-                    {
-                        ObjectPosition = new Vector3(transform.position.x + 18 + Random.Range(baseNumber, baseNumber * 1.4f), transform.position.y + 4, -3);
-                        MakeObstacles();
-                        baseNumber += 4;
-                    }
-                    baseNumber = 0;
-
-                    // Lane 2 cars
-                    for (int i = 0; i < obstacleCounterLane2; i++)
-                    {
-                        ObjectPosition = new Vector3(transform.position.x + 20 + Random.Range(baseNumber, baseNumber * 1.4f), transform.position.y + 1, -3);
-                        ObjectRotation = Vector3.zero;
-                        MakeCar();
-                        baseNumber += 4;
-                    }
-                    baseNumber = 0;
-
-                    // Lane 3 cars
-                    for (int i = 0; i < obstacleCounterLane3; i++)
-                    {
-                        ObjectPosition = new Vector3(transform.position.x - 20 - (baseNumber * 1.4f), transform.position.y - 2, -3);
-                        ObjectRotation = new Vector3(0, 0, 180);
-                        MakeCar();
-                        baseNumber += 4;
-                    }
-                    baseNumber = 0;
-
-                    // Lane 4 obstacles
-                    for (int i = 0; i < obstacleCounterLane4; i++)
-                    {
-                        ObjectPosition = new Vector3(transform.position.x + 18 + Random.Range(baseNumber, baseNumber * 1.4f), transform.position.y - 5, -3);
-                        MakeObstacles();
-                        baseNumber += 4;
-                    }
-
-                    internalTimer.laneTransition += 1;
-                    foodCreated = false;
-                }
-
-                internalTimer.numberOfLanes += 1;
-            }
-        }
-
-        // Randomizes the objects that spawns. its either food, trash bins, blockades, or cars
-        public void MakeObstacles()
-        {
-            choice = Random.Range(1, 401);
-
-            if (choice <= 50 && !foodCreated)
-            {
-                GameObject newFood = Instantiate(CatFoodPrefab, ObjectPosition, Quaternion.identity);
-                foodCreated = true;
-            }
-            else
-            {
-                choice = Random.Range(1, 401);
-                if (choice <= 100)
-                {
-                    GameObject newObject = Instantiate(BlockablePrefab, ObjectPosition, Quaternion.identity);
-                }
-                else
-                {
-                    GameObject newObject = Instantiate(ObjectPrefab, ObjectPosition, Quaternion.identity);
-                }
-            }
-        }
-
-        public void MakeCar()
-        {
-            choice = Random.Range(1, 401);
-
-            if (choice <= 50 && !foodCreated)
-            {
-                GameObject newFood = Instantiate(CatFoodPrefab, ObjectPosition, Quaternion.identity);
-                foodCreated = true;
-            }
-            else
-            {
-                GameObject newObject = Instantiate(VehiclePrefab, ObjectPosition, Quaternion.identity);
-                newObject.transform.Rotate(ObjectRotation); // Rotate the car itself
+                objectNumbersGenerated = true;
             }
         }
     }

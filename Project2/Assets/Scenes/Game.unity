@@ -350,6 +350,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46ef15d0b85197479ef2b233e97920b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &340397725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8944654211345748506, guid: d39c8c127ac2deb4990286b1e0f83add, type: 3}
+  m_PrefabInstance: {fileID: 3354073950538937963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &340397728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340397725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f729dbcd7150347ba04c2bece3f968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lanesPrefab: {fileID: 5058080788097713202, guid: 046ebef3189d8014e9de8d9b25b0dc86, type: 3}
+  vehiclePrefab: {fileID: 5990755647855730922, guid: 6975801e88144f24a9ff52e20cc92769, type: 3}
+  objectPrefab: {fileID: 4003722687620280440, guid: 1fa09315736e88b45a9ae18b2e19fbaf, type: 3}
+  laneTransitionPrefab: {fileID: 7579738927084727350, guid: 671ab3ec45ec72143bcaea34f30c86d3, type: 3}
+  catFoodPrefab: {fileID: 4184787837632382400, guid: 9143a16726796f745b3697e78ca4dff6, type: 3}
+  blockablePrefab: {fileID: 589051507083428914, guid: 15beda7fe13a6e943bb1929efd92c799, type: 3}
+  winningShopPrefab: {fileID: 2508913546700741247, guid: 03b1b19bc497aba48b31dac53498aad3, type: 3}
+  lanePosition: {x: 0, y: 0, z: 0}
+  objectPosition: {x: 0, y: 0, z: 0}
+  objectRotation: {x: 0, y: 0, z: 0}
+  objectNumbersGenerated: 0
+  obstacleCounterLane1: 0
+  obstacleCounterLane2: 0
+  obstacleCounterLane3: 0
+  obstacleCounterLane4: 0
+  baseNumber: 0
+  choice: 0
+  foodCreated: 0
 --- !u!1 &645014225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,7 +1184,7 @@ Transform:
   m_GameObject: {fileID: 1573436561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -152.1, y: -6.51, z: -10}
+  m_LocalPosition: {x: -154.5, y: -6.51, z: -10}
   m_LocalScale: {x: 0.125, y: 0.125, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1554,7 +1589,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8944654211345748506, guid: d39c8c127ac2deb4990286b1e0f83add, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 340397728}
   m_SourcePrefab: {fileID: 100100000, guid: d39c8c127ac2deb4990286b1e0f83add, type: 3}
 --- !u!1001 &7115285447748700021
 PrefabInstance:
@@ -1616,7 +1654,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 1.16
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3964649972228735209, guid: 1547fcef7046df540a9ddb749129b051, type: 3}
+    - {fileID: 8949493900830648524, guid: 1547fcef7046df540a9ddb749129b051, type: 3}
+    - {fileID: 7784625832657664402, guid: 1547fcef7046df540a9ddb749129b051, type: 3}
+    - {fileID: 1224727519325175438, guid: 1547fcef7046df540a9ddb749129b051, type: 3}
+    - {fileID: 5014928458097700101, guid: 1547fcef7046df540a9ddb749129b051, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1703,7 +1746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5433332877577968766, guid: c4b23aa6b682d4043a0f25e94b67a833, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -152.1
+      value: -154.5
       objectReference: {fileID: 0}
     - target: {fileID: 5433332877577968766, guid: c4b23aa6b682d4043a0f25e94b67a833, type: 3}
       propertyPath: m_LocalPosition.y

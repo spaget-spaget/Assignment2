@@ -9,7 +9,7 @@ namespace Assets.Scripts
         //Variables
         public GameObject laneTransitionPrefab;
         private CatMovement playerCatScript;
-        private float returnXValue = -28;
+        private float returnXValue = -30;
         private Vector3 lanePosition = new Vector3(-28, -6.05f, 0);
         private Vector3 OwnerPosition = new Vector3(0, 0, 0);
         private GameObject Owner;

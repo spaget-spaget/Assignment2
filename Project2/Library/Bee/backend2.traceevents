@@ -1,314 +1,402 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1755092416730064, "dur":61, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092416730160, "dur":38691, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092416768859, "dur":143, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092416769058, "dur":441, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092416769855, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":0, "ts":1755092416769971, "dur":62, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":0, "ts":1755092416770187, "dur":75, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":0, "ts":1755092416770614, "dur":59, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1755092416771641, "dur":62, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1755092416773683, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":0, "ts":1755092416769526, "dur":4370, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092416773898, "dur":3452543, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092420226443, "dur":312, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092420226798, "dur":124, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092420227169, "dur":1743, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1755092416769897, "dur":4015, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1755092416773921, "dur":5036, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1755092416783219, "dur":931, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":1, "ts":1755092416784153, "dur":188, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1755092416784349, "dur":1830, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":1, "ts":1755092416786181, "dur":151, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":1, "ts":1755092416784152, "dur":2542, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1755092416788569, "dur":149844, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1755092416942113, "dur":2615, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1755092416942112, "dur":2618, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1755092416944782, "dur":1361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1755092416946147, "dur":3280249, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416769966, "dur":3986, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416773961, "dur":553, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416774514, "dur":251, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416774765, "dur":4293, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416779069, "dur":261, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":2, "ts":1755092416779331, "dur":285, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416779637, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1755092416779801, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416779932, "dur":2182, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":2, "ts":1755092416779918, "dur":2197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":2, "ts":1755092416782116, "dur":287, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416782435, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416782532, "dur":586, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416783135, "dur":281, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416783425, "dur":496, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416783938, "dur":1315, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1755092416785303, "dur":10157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":2, "ts":1755092416795524, "dur":7097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level0" }}
-,{ "pid":12345, "tid":2, "ts":1755092416802710, "dur":3423739, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1755092416769949, "dur":3989, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1755092416773953, "dur":980, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1755092416774933, "dur":4069, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1755092416779191, "dur":169, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416779361, "dur":100, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416779462, "dur":270, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416779732, "dur":551, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416780284, "dur":1228, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416781514, "dur":150, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416781666, "dur":1601, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416783276, "dur":1910, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416785197, "dur":196, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":3, "ts":1755092416785454, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneWindows.json" }}
-,{ "pid":12345, "tid":3, "ts":1755092416785590, "dur":321, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\PackageCache\\com.unity.burst@1.8.13\\.Runtime\\bcl.exe" }}
-,{ "pid":12345, "tid":3, "ts":1755092416779008, "dur":6905, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":3, "ts":1755092416793891, "dur":3429534, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":3, "ts":1755092420226025, "dur":308, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416770064, "dur":4214, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416774289, "dur":937, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416775227, "dur":3766, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416779010, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416779187, "dur":362, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416779563, "dur":122, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1755092416779556, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1755092416779686, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416779889, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":4, "ts":1755092416779888, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":4, "ts":1755092416779965, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416780076, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416780177, "dur":478, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416780666, "dur":910, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416781618, "dur":184, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":4, "ts":1755092416781616, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":4, "ts":1755092416781803, "dur":200, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416782017, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416782217, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416782427, "dur":233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416782668, "dur":245, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416782921, "dur":271, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416783201, "dur":312, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416783524, "dur":205, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416783743, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416783899, "dur":266, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416784173, "dur":307, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416784509, "dur":4947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":4, "ts":1755092416789518, "dur":598, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416790118, "dur":51, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":4, "ts":1755092416792527, "dur":53, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1755092416790330, "dur":2268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1755092416792788, "dur":5784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level2" }}
-,{ "pid":12345, "tid":4, "ts":1755092416798726, "dur":3427746, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416770146, "dur":4378, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416774524, "dur":4758, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416779352, "dur":187, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1755092416779337, "dur":203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1755092416779541, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416779652, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1755092416779790, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416779932, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
-,{ "pid":12345, "tid":5, "ts":1755092416779924, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2.exe" }}
-,{ "pid":12345, "tid":5, "ts":1755092416780000, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416780065, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416780279, "dur":51, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":5, "ts":1755092416780334, "dur":259, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416780610, "dur":311, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416780929, "dur":200, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1755092416780927, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1755092416781130, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416781205, "dur":167, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1755092416781204, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1755092416781374, "dur":208, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416781583, "dur":60, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1755092416781666, "dur":244, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416781924, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416782135, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416782337, "dur":220, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416782581, "dur":335, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416782925, "dur":339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416783275, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416783480, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416783659, "dur":209, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416783878, "dur":315, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416784201, "dur":269, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416789303, "dur":356, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416784491, "dur":5210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1755092416789764, "dur":578, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1755092416790366, "dur":8235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1755092416798693, "dur":3427747, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416769926, "dur":3997, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416773928, "dur":587, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416774516, "dur":4958, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416779482, "dur":148, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
-,{ "pid":12345, "tid":6, "ts":1755092416779475, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1755092416779682, "dur":354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1755092416780037, "dur":260, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416780332, "dur":210, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416780550, "dur":273, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416780833, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416781017, "dur":390, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
-,{ "pid":12345, "tid":6, "ts":1755092416781016, "dur":391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Collections.dll" }}
-,{ "pid":12345, "tid":6, "ts":1755092416781408, "dur":272, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416781691, "dur":215, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416781918, "dur":283, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416782211, "dur":208, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416782432, "dur":269, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416782713, "dur":237, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416782962, "dur":207, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416783182, "dur":206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416783408, "dur":189, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416783606, "dur":233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416783850, "dur":533, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416790126, "dur":57, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416784403, "dur":5797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":6, "ts":1755092416800397, "dur":80, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1755092416790264, "dur":10228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.resource" }}
-,{ "pid":12345, "tid":6, "ts":1755092416800560, "dur":3425878, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416770053, "dur":4042, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416774108, "dur":905, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416775014, "dur":4350, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416779375, "dur":393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1755092416779770, "dur":541, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416780312, "dur":141, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1755092416780464, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416780641, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416780818, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416781013, "dur":221, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1755092416781012, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1755092416781235, "dur":334, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416781605, "dur":1158, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1755092416781603, "dur":1161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1755092416782764, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416782849, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416783012, "dur":341, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416783369, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416783577, "dur":174, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416783759, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416783951, "dur":1295, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416789194, "dur":140, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1755092416785296, "dur":4082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1755092416789456, "dur":6232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":7, "ts":1755092416795754, "dur":7145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1755092416802959, "dur":3423505, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416769988, "dur":3977, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416773974, "dur":646, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416774620, "dur":4470, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416779102, "dur":106, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
-,{ "pid":12345, "tid":8, "ts":1755092416779095, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1755092416779210, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416779278, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1755092416779365, "dur":502, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416779874, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1755092416779950, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416780017, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":8, "ts":1755092416780076, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416780184, "dur":256, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416780469, "dur":214, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416780696, "dur":248, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416780954, "dur":1067, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1755092416780952, "dur":1071, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1755092416782023, "dur":371, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416782403, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416782588, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416782802, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416782966, "dur":200, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416783179, "dur":223, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416783412, "dur":182, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416783603, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416783837, "dur":428, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416784285, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1755092416784503, "dur":9197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.resource" }}
-,{ "pid":12345, "tid":8, "ts":1755092416793764, "dur":6675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level1" }}
-,{ "pid":12345, "tid":8, "ts":1755092416800487, "dur":3425978, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416770022, "dur":3961, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416773995, "dur":793, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416774788, "dur":4238, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416779052, "dur":312, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
-,{ "pid":12345, "tid":9, "ts":1755092416779040, "dur":325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":9, "ts":1755092416779366, "dur":387, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416779762, "dur":472, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
-,{ "pid":12345, "tid":9, "ts":1755092416779761, "dur":474, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":9, "ts":1755092416780284, "dur":115, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":9, "ts":1755092416780403, "dur":245, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416780666, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416780868, "dur":220, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416781115, "dur":455, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":9, "ts":1755092416781114, "dur":457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":9, "ts":1755092416781572, "dur":218, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416781803, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416781901, "dur":203, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416782113, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416782304, "dur":202, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416782516, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416782595, "dur":322, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416782929, "dur":234, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416783174, "dur":322, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416783504, "dur":236, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416783750, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416783956, "dur":320, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416784283, "dur":84, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
-,{ "pid":12345, "tid":9, "ts":1755092416784282, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":9, "ts":1755092416791781, "dur":191, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1755092416784428, "dur":7565, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.resource" }}
-,{ "pid":12345, "tid":9, "ts":1755092416792108, "dur":6653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level3" }}
-,{ "pid":12345, "tid":9, "ts":1755092416798797, "dur":3427674, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416770137, "dur":4166, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416774313, "dur":842, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416775155, "dur":3856, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416779032, "dur":157, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":10, "ts":1755092416779018, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":10, "ts":1755092416779190, "dur":453, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416779657, "dur":522, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
-,{ "pid":12345, "tid":10, "ts":1755092416779656, "dur":524, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":10, "ts":1755092416780180, "dur":339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416780525, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416780715, "dur":228, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416780950, "dur":990, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":10, "ts":1755092416780949, "dur":992, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":10, "ts":1755092416781941, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416782130, "dur":210, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416782349, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416782556, "dur":234, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416782811, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416782991, "dur":275, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416783278, "dur":225, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416783513, "dur":229, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416783753, "dur":380, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416784143, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1755092416784356, "dur":6190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets3.assets.resS" }}
-,{ "pid":12345, "tid":10, "ts":1755092416790623, "dur":7654, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.assets" }}
-,{ "pid":12345, "tid":10, "ts":1755092416798377, "dur":3929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":10, "ts":1755092416802482, "dur":3424036, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416770179, "dur":4386, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416774566, "dur":4771, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416779343, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":11, "ts":1755092416779465, "dur":309, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416779780, "dur":565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":11, "ts":1755092416780346, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416780538, "dur":221, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416780772, "dur":230, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416781009, "dur":195, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":11, "ts":1755092416781008, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":11, "ts":1755092416781205, "dur":210, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416781430, "dur":151, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":11, "ts":1755092416781428, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":11, "ts":1755092416781583, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416781808, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1755092416785248, "dur":3520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":11, "ts":1755092416788838, "dur":13091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1755092416801968, "dur":3424531, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416770247, "dur":4459, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416774706, "dur":4338, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416779056, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":12, "ts":1755092416779248, "dur":262, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416779529, "dur":338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":12, "ts":1755092416779868, "dur":231, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416780126, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416780311, "dur":123, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":12, "ts":1755092416780447, "dur":337, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416780794, "dur":287, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416781104, "dur":2796, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":12, "ts":1755092416781102, "dur":2805, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":12, "ts":1755092416783908, "dur":1349, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1755092416785295, "dur":11594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":12, "ts":1755092416796962, "dur":4648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":12, "ts":1755092416801672, "dur":3424804, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1755092420232073, "dur":1401, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1755146212017043, "dur":52, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146212017119, "dur":47635, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146212064768, "dur":171, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146212065037, "dur":1380, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146212066659, "dur":85, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":0, "ts":1755146212066765, "dur":64, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":0, "ts":1755146212066839, "dur":67, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":0, "ts":1755146212066914, "dur":60, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1755146212066982, "dur":59, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level0" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067049, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level1" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067115, "dur":59, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level2" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067182, "dur":66, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level3" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067257, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.assets" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067324, "dur":60, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067393, "dur":59, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.resource" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067462, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067532, "dur":60, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067602, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067669, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067736, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1755146212067802, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068175, "dur":68, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068255, "dur":57, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068321, "dur":57, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068387, "dur":60, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068456, "dur":60, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068525, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068596, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068671, "dur":73, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068753, "dur":62, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/boot.config" }}
+,{ "pid":12345, "tid":0, "ts":1755146212068836, "dur":184, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":0, "ts":1755146212070153, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212070362, "dur":2801, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212073212, "dur":202, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212073910, "dur":148, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212074105, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212074483, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212075113, "dur":53, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212075425, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212075706, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":0, "ts":1755146212066628, "dur":10200, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146212076830, "dur":12086052, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146224162886, "dur":221, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146224163134, "dur":137, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146224163283, "dur":56, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755146224163474, "dur":1886, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1755146212067586, "dur":9276, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755146212076872, "dur":2438, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755146212079313, "dur":6283, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755146212085599, "dur":394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1755146212098468, "dur":53, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755146212087468, "dur":11093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1755146212098684, "dur":328, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1755146212105057, "dur":61, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755146212099080, "dur":6082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1755146212105297, "dur":31793, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":1, "ts":1755146212105292, "dur":31800, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1755146212137277, "dur":2800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1755146212140319, "dur":3756, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212140317, "dur":3761, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212144123, "dur":5199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212149401, "dur":3637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212153121, "dur":4122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212157333, "dur":4948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212162350, "dur":3411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212165827, "dur":3433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212169325, "dur":3334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212172764, "dur":2949, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212175770, "dur":1780, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212177596, "dur":1777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212179429, "dur":1578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212181054, "dur":2278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212183414, "dur":1757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212185218, "dur":1775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212187050, "dur":2057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212189155, "dur":1320, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212190535, "dur":1510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212192107, "dur":1819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212193969, "dur":1170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212195184, "dur":1291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212196535, "dur":2134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212198715, "dur":1441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212200201, "dur":1116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755146212201358, "dur":1955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1755146212203381, "dur":1435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1755146212204866, "dur":2232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1755146212207140, "dur":973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1755146212208147, "dur":1356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level3" }}
+,{ "pid":12345, "tid":1, "ts":1755146212209597, "dur":1497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1755146212211136, "dur":2968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1755146212214139, "dur":11948751, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755146212067216, "dur":9626, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755146212076854, "dur":8619, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755146212133792, "dur":64, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755146212132260, "dur":1624, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":2, "ts":1755146212133893, "dur":249, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1755146212134162, "dur":23709, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1755146212157873, "dur":116, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1755146212158200, "dur":137, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playera065d95e-inputdata.json" }}
+,{ "pid":12345, "tid":2, "ts":1755146212158399, "dur":377642, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.BuildTools.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146212536043, "dur":191, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146212536235, "dur":604837, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.CSharpSupport.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146213141074, "dur":194, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.DotNet.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146213141270, "dur":178, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.NativeProgramSupport.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146213141449, "dur":6210, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Stevedore.Program.exe" }}
+,{ "pid":12345, "tid":2, "ts":1755146213147661, "dur":133, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TinyProfiler2.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146213147795, "dur":151239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.GNU.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146213299038, "dur":173134, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.LLVM.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146213472174, "dur":494239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.VisualStudio.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146213966417, "dur":374637, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.Xcode.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146214341055, "dur":131, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Tools.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146214341186, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.TundraBackend.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146214341390, "dur":128, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\BeeLocalCacheTool.exe" }}
+,{ "pid":12345, "tid":2, "ts":1755146214341518, "dur":17612, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146214359132, "dur":128, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\NiceIO.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146214359308, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\PlayerBuildProgramLibrary.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146214359467, "dur":343237, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\SharpYaml.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146214702705, "dur":148487, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Api.Attributes.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146214851195, "dur":243164, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146215094361, "dur":254209, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146215348574, "dur":107009, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146215455584, "dur":174438, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146215630024, "dur":106, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Api.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146215630131, "dur":83, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.BuildLogic.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146215630215, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146215630316, "dur":347348, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Options.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755146212133891, "dur":3843775, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1755146215977772, "dur":116810, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1755146216101419, "dur":208, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1755146216101418, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1755146216101662, "dur":1597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1755146216103263, "dur":8059633, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755146212068737, "dur":8363, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755146212077116, "dur":2694, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755146212079811, "dur":5747, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755146212085565, "dur":426, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1755146212127275, "dur":5692, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755146212133005, "dur":4222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1755146212137307, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1755146212137638, "dur":4977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1755146212142767, "dur":4779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212147632, "dur":4259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212151999, "dur":3949, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212156013, "dur":6137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212162251, "dur":5383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212171282, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755146212167735, "dur":3651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212171483, "dur":2935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212174496, "dur":2875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212177456, "dur":2361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212179871, "dur":1568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212183555, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755146212181492, "dur":2126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212183688, "dur":1574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212186931, "dur":142, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755146212185307, "dur":1797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212187186, "dur":1996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212189250, "dur":1555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212190851, "dur":1930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212192826, "dur":1550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212194420, "dur":1364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212195833, "dur":1416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212197284, "dur":1578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212198904, "dur":1491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212200425, "dur":249064, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212200424, "dur":249068, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212449586, "dur":12197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755146212461805, "dur":11701121, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755146212067416, "dur":9436, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755146212077540, "dur":1004, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Api.Attributes.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755146212076859, "dur":2545, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755146212079405, "dur":6111, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755146212085526, "dur":236326, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1755146212085517, "dur":236338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1755146212321921, "dur":2884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1755146212324832, "dur":11838061, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755146212067755, "dur":9141, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755146212077393, "dur":910, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755146212076926, "dur":2422, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755146212079349, "dur":6423, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755146212085772, "dur":395, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1755146212086409, "dur":10806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1755146212097407, "dur":34396, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1755146212097401, "dur":34405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1755146212131856, "dur":2692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1755146212134619, "dur":135309, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755146212134616, "dur":135314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755146212270011, "dur":2254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755146212272338, "dur":11890567, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755146212068456, "dur":8618, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755146212077095, "dur":2795, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755146212079892, "dur":5834, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755146212085734, "dur":38742, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1755146212085727, "dur":38753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1755146212127945, "dur":648, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755146212124550, "dur":4086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1755146212129123, "dur":712, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1755146212129855, "dur":69, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755146212129937, "dur":6075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1755146212136142, "dur":195409, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755146212136138, "dur":195415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755146212331575, "dur":5349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755146212336946, "dur":11825971, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755146212068148, "dur":8793, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755146212076955, "dur":1398, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755146212078354, "dur":7231, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755146212085616, "dur":40404, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":7, "ts":1755146212085588, "dur":40435, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1755146212126079, "dur":4206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1755146212130376, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1755146212130851, "dur":5520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1755146212136477, "dur":126239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":7, "ts":1755146212136476, "dur":126243, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2.exe" }}
+,{ "pid":12345, "tid":7, "ts":1755146212266217, "dur":136, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755146212262765, "dur":3615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2.exe" }}
+,{ "pid":12345, "tid":7, "ts":1755146212266488, "dur":11896388, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755146212068951, "dur":8296, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755146212077255, "dur":1499, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755146212078755, "dur":7021, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755146212085777, "dur":343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1755146212097024, "dur":64, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755146212086522, "dur":10609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1755146212097303, "dur":454, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1755146212103414, "dur":213, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755146212098060, "dur":5615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1755146212103816, "dur":563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1755146212110108, "dur":64, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755146212104888, "dur":5328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1755146212110332, "dur":537, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1755146212116305, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755146212111310, "dur":5096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1755146212116595, "dur":25243, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1755146212116590, "dur":25251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1755146212141898, "dur":2335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1755146212144319, "dur":3052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212147499, "dur":3805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212151392, "dur":4300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212155850, "dur":3736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212159726, "dur":5346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212165151, "dur":3320, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212168524, "dur":2694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212171457, "dur":2270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212173768, "dur":1885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212175729, "dur":1951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212177735, "dur":2167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212179945, "dur":1789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212181783, "dur":1958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212183776, "dur":1693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212185509, "dur":1474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212187043, "dur":1508, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212188606, "dur":1603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212190263, "dur":1426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212191752, "dur":1758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212193558, "dur":1195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212194801, "dur":1204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212196092, "dur":1469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212197604, "dur":1588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212199233, "dur":1504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755146212200783, "dur":1142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":8, "ts":1755146212201961, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":8, "ts":1755146212203379, "dur":1440, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1755146212204860, "dur":2740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1755146212207640, "dur":3449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.resource" }}
+,{ "pid":12345, "tid":8, "ts":1755146212211136, "dur":1529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1755146212212717, "dur":1217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1755146212213966, "dur":11948903, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755146212069138, "dur":8336, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755146212078245, "dur":538, "ph":"X", "name": "File",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\sharedassets2.assets" }}
+,{ "pid":12345, "tid":9, "ts":1755146212077491, "dur":2382, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755146212079874, "dur":5678, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755146212085555, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1755146212148105, "dur":2525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1755146212150771, "dur":4959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212155803, "dur":51, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755146212155861, "dur":4070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212160001, "dur":5139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212165215, "dur":2709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212167997, "dur":4147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212172205, "dur":2674, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212174945, "dur":2644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212177658, "dur":2213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212179944, "dur":1696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212183520, "dur":70, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755146212181706, "dur":1896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212183670, "dur":1785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212185502, "dur":1750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212187296, "dur":1860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212189200, "dur":1572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212190817, "dur":1765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212192624, "dur":1395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212194062, "dur":1460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212195564, "dur":1431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212197061, "dur":1353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212198461, "dur":1461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212199964, "dur":1268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755146212201282, "dur":2195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":9, "ts":1755146212203517, "dur":3161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":9, "ts":1755146212206768, "dur":1117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":9, "ts":1755146212207922, "dur":1719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.assets" }}
+,{ "pid":12345, "tid":9, "ts":1755146212209683, "dur":1398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/level1" }}
+,{ "pid":12345, "tid":9, "ts":1755146212211171, "dur":1563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":9, "ts":1755146212212762, "dur":11950118, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755146212069351, "dur":8150, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755146212077528, "dur":1171, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755146212078701, "dur":6820, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755146212085578, "dur":175523, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":10, "ts":1755146212085546, "dur":175559, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":10, "ts":1755146212264790, "dur":71, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755146212261429, "dur":3505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":10, "ts":1755146212265003, "dur":11897909, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755146212069532, "dur":7997, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755146212077530, "dur":7953, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755146212089883, "dur":70, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755146212087761, "dur":2297, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":11, "ts":1755146212090069, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/app.info" }}
+,{ "pid":12345, "tid":11, "ts":1755146212096043, "dur":74, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755146212090412, "dur":5751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/app.info" }}
+,{ "pid":12345, "tid":11, "ts":1755146212096178, "dur":40746, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":11, "ts":1755146212096172, "dur":40755, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1755146212136944, "dur":157, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755146212137114, "dur":2779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1755146212139991, "dur":7424, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\mscorlib.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212139988, "dur":7430, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212147478, "dur":6029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212153580, "dur":3731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212157378, "dur":4780, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212162220, "dur":3001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212165294, "dur":2966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212168366, "dur":3733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212172162, "dur":2616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212174835, "dur":2672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212177588, "dur":2247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212179883, "dur":1468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212181435, "dur":1817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212183313, "dur":1786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212185152, "dur":1969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212187172, "dur":1690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212188908, "dur":1553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212190509, "dur":1495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212192055, "dur":1947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212194060, "dur":1493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212195612, "dur":1492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212197209, "dur":1622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212198896, "dur":1518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755146212200450, "dur":1972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1755146212202524, "dur":4160, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":11, "ts":1755146212206748, "dur":1128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":11, "ts":1755146212207917, "dur":7212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/olive/GADVWORKSHEETSNEW/Assignment2/Assignment2/Project2_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1755146212215157, "dur":11947715, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755146212069717, "dur":7847, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755146212077566, "dur":7929, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755146212085603, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212085882, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212085972, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212086043, "dur":356, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212086401, "dur":746, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212087153, "dur":1166, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212088325, "dur":335, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212088665, "dur":1047, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212089717, "dur":321, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212090043, "dur":381, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212090430, "dur":846, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212091519, "dur":681, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212092205, "dur":1690, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212093902, "dur":3432, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212097353, "dur":672, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212098031, "dur":3630, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212101666, "dur":3641, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212105313, "dur":738, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212106058, "dur":370, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\PackageCache\\com.unity.collections@1.2.4\\Unity.Collections.LowLevel.ILSupport\\Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212106434, "dur":473, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\PackageCache\\com.unity.visualscripting@1.9.2\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212106912, "dur":288, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\PackageCache\\com.unity.burst@1.8.13\\Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212107204, "dur":275, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\System.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212107484, "dur":456, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\netstandard.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212107944, "dur":929, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212108877, "dur":631, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212109521, "dur":367, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212109891, "dur":3138, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212113033, "dur":375, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212113412, "dur":4818, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Data.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212118234, "dur":901, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Drawing.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212119137, "dur":234, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212119373, "dur":155, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212119530, "dur":246, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212119778, "dur":242, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212120022, "dur":358, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212120384, "dur":1919, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212122308, "dur":868, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Security.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212123181, "dur":634, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212123819, "dur":659, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212124482, "dur":698, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212125184, "dur":10253, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Xml.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212135441, "dur":5931, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212141376, "dur":7197, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\mscorlib.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755146212148575, "dur":194, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneWindows.json" }}
+,{ "pid":12345, "tid":12, "ts":1755146212148820, "dur":775727, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\olive\\GADVWORKSHEETSNEW\\Assignment2\\Assignment2\\Project2\\Library\\PackageCache\\com.unity.burst@1.8.13\\.Runtime\\bcl.exe" }}
+,{ "pid":12345, "tid":12, "ts":1755146212085497, "dur":839053, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":12, "ts":1755146212924559, "dur":64, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755146212925906, "dur":11234175, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":0, "ts":1755146224170478, "dur":3538, "ph":"X", "name": "ProfilerWriteOutput" }
 ,
